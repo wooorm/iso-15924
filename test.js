@@ -7,7 +7,7 @@
  */
 
 var assert = require('assert');
-var iso15942 = require('./');
+var iso15924 = require('./');
 
 /*
  * Dependencies.
@@ -19,9 +19,9 @@ var equal = assert.strictEqual;
  * Tests.
  */
 
-describe('iso15942.get(property)', function () {
+describe('iso15924.get(property)', function () {
     it('should get by cased code', function () {
-        var result = iso15942.get('Latn');
+        var result = iso15924.get('Latn');
 
         equal(result.code, 'Latn');
         equal(result.numeric, '215');
@@ -31,7 +31,7 @@ describe('iso15942.get(property)', function () {
     });
 
     it('should get by uncased (lower-case) code', function () {
-        var result = iso15942.get('latn');
+        var result = iso15924.get('latn');
 
         equal(result.code, 'Latn');
         equal(result.numeric, '215');
@@ -41,7 +41,7 @@ describe('iso15942.get(property)', function () {
     });
 
     it('should get by number code', function () {
-        var result = iso15942.get('215');
+        var result = iso15924.get('215');
 
         equal(result.code, 'Latn');
         equal(result.numeric, '215');
@@ -51,35 +51,35 @@ describe('iso15942.get(property)', function () {
     });
 
     it('should return null if am item is not in the database', function () {
-        equal(iso15942.get('Wxyz'), null);
+        equal(iso15924.get('Wxyz'), null);
     });
 });
 
-describe('iso15942.has(property)', function () {
+describe('iso15924.has(property)', function () {
     it('should return if an item is in the database', function () {
-        equal(iso15942.has('Latn'), true);
-        equal(iso15942.has('Unic'), false);
+        equal(iso15924.has('Latn'), true);
+        equal(iso15924.has('Unic'), false);
     });
 
     it('should not fail on prototpe extending', function () {
         /* eslint-disable no-extend-native */
         Object.prototype.unicorn = 'mammal';
 
-        assert(!iso15942.has('unicorn'));
+        assert(!iso15924.has('unicorn'));
 
         delete Object.prototype.unicorn;
         /* eslint-enable no-extend-native */
     });
 
     it('should not fail on native properties', function () {
-        assert(!iso15942.has('toString'));
-        assert(!iso15942.has('constructor'));
-        assert(!iso15942.has('hasOwnProperty'));
+        assert(!iso15924.has('toString'));
+        assert(!iso15924.has('constructor'));
+        assert(!iso15924.has('hasOwnProperty'));
     });
 });
 
-describe('iso15942.all()', function () {
-    var all = iso15942.all();
+describe('iso15924.all()', function () {
+    var all = iso15924.all();
 
     it('should return an object', function () {
         equal(typeof all, 'object');
@@ -96,8 +96,8 @@ describe('iso15942.all()', function () {
     it('should be immutable', function () {
         all.unicorn = 'mammal';
 
-        assert(!iso15942.has('unicorn'));
+        assert(!iso15924.has('unicorn'));
 
-        assert(!('unicorn' in iso15942.all()));
+        assert(!('unicorn' in iso15924.all()));
     });
 });
