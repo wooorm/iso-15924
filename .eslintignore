@@ -1,0 +1,6 @@
+build/
+components/
+coverage/
+build.js
+iso-15924.js
+iso-15924.min.js
