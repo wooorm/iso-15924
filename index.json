@@ -1,1501 +1,1276 @@
-(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.iso15924 = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports={
-  "adlm": {
+[
+  {
     "code": "Adlm",
-    "numeric": "166",
     "name": "Adlam",
-    "pva": "",
+    "numeric": "166",
+    "pva": null,
     "date": "2014-11-15"
   },
-  "afak": {
+  {
     "code": "Afak",
-    "numeric": "439",
     "name": "Afaka",
-    "pva": "",
+    "numeric": "439",
+    "pva": null,
     "date": "2010-12-21"
   },
-  "aghb": {
+  {
     "code": "Aghb",
-    "numeric": "239",
     "name": "Caucasian Albanian",
+    "numeric": "239",
     "pva": "Caucasian_Albanian",
     "date": "2014-11-15"
   },
-  "ahom": {
+  {
     "code": "Ahom",
-    "numeric": "338",
     "name": "Ahom, Tai Ahom",
+    "numeric": "338",
     "pva": "Ahom",
     "date": "2015-07-07"
   },
-  "arab": {
+  {
     "code": "Arab",
-    "numeric": "160",
     "name": "Arabic",
+    "numeric": "160",
     "pva": "Arabic",
     "date": "2004-05-01"
   },
-  "aran": {
+  {
     "code": "Aran",
-    "numeric": "161",
     "name": "Arabic (Nastaliq variant)",
-    "pva": "",
+    "numeric": "161",
+    "pva": null,
     "date": "2014-11-15"
   },
-  "armi": {
+  {
     "code": "Armi",
-    "numeric": "124",
     "name": "Imperial Aramaic",
+    "numeric": "124",
     "pva": "Imperial_Aramaic",
     "date": "2009-06-01"
   },
-  "armn": {
+  {
     "code": "Armn",
-    "numeric": "230",
     "name": "Armenian",
+    "numeric": "230",
     "pva": "Armenian",
     "date": "2004-05-01"
   },
-  "avst": {
+  {
     "code": "Avst",
-    "numeric": "134",
     "name": "Avestan",
+    "numeric": "134",
     "pva": "Avestan",
     "date": "2009-06-01"
   },
-  "bali": {
+  {
     "code": "Bali",
-    "numeric": "360",
     "name": "Balinese",
+    "numeric": "360",
     "pva": "Balinese",
     "date": "2006-10-10"
   },
-  "bamu": {
+  {
     "code": "Bamu",
-    "numeric": "435",
     "name": "Bamum",
+    "numeric": "435",
     "pva": "Bamum",
     "date": "2009-06-01"
   },
-  "bass": {
+  {
     "code": "Bass",
-    "numeric": "259",
     "name": "Bassa Vah",
+    "numeric": "259",
     "pva": "Bassa_Vah",
     "date": "2014-11-15"
   },
-  "batk": {
+  {
     "code": "Batk",
-    "numeric": "365",
     "name": "Batak",
+    "numeric": "365",
     "pva": "Batak",
     "date": "2010-07-23"
   },
-  "beng": {
+  {
     "code": "Beng",
-    "numeric": "325",
     "name": "Bengali",
+    "numeric": "325",
     "pva": "Bengali",
     "date": "2004-05-01"
   },
-  "bhks": {
+  {
     "code": "Bhks",
-    "numeric": "334",
     "name": "Bhaiksuki",
-    "pva": "",
+    "numeric": "334",
+    "pva": null,
     "date": "2015-07-15"
   },
-  "blis": {
+  {
     "code": "Blis",
-    "numeric": "550",
     "name": "Blissymbols",
-    "pva": "",
+    "numeric": "550",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "bopo": {
+  {
     "code": "Bopo",
-    "numeric": "285",
     "name": "Bopomofo",
+    "numeric": "285",
     "pva": "Bopomofo",
     "date": "2004-05-01"
   },
-  "brah": {
+  {
     "code": "Brah",
-    "numeric": "300",
     "name": "Brahmi",
+    "numeric": "300",
     "pva": "Brahmi",
     "date": "2010-07-23"
   },
-  "brai": {
+  {
     "code": "Brai",
-    "numeric": "570",
     "name": "Braille",
+    "numeric": "570",
     "pva": "Braille",
     "date": "2004-05-01"
   },
-  "bugi": {
+  {
     "code": "Bugi",
-    "numeric": "367",
     "name": "Buginese",
+    "numeric": "367",
     "pva": "Buginese",
     "date": "2006-06-21"
   },
-  "buhd": {
+  {
     "code": "Buhd",
-    "numeric": "372",
     "name": "Buhid",
+    "numeric": "372",
     "pva": "Buhid",
     "date": "2004-05-01"
   },
-  "cakm": {
+  {
     "code": "Cakm",
-    "numeric": "349",
     "name": "Chakma",
+    "numeric": "349",
     "pva": "Chakma",
     "date": "2012-02-06"
   },
-  "cans": {
+  {
     "code": "Cans",
-    "numeric": "440",
     "name": "Unified Canadian Aboriginal Syllabics",
+    "numeric": "440",
     "pva": "Canadian_Aboriginal",
     "date": "2004-05-29"
   },
-  "cari": {
+  {
     "code": "Cari",
-    "numeric": "201",
     "name": "Carian",
+    "numeric": "201",
     "pva": "Carian",
     "date": "2007-07-02"
   },
-  "cham": {
+  {
     "code": "Cham",
-    "numeric": "358",
     "name": "Cham",
+    "numeric": "358",
     "pva": "Cham",
     "date": "2009-11-11"
   },
-  "cher": {
+  {
     "code": "Cher",
-    "numeric": "445",
     "name": "Cherokee",
+    "numeric": "445",
     "pva": "Cherokee",
     "date": "2004-05-01"
   },
-  "cirt": {
+  {
     "code": "Cirt",
-    "numeric": "291",
     "name": "Cirth",
-    "pva": "",
+    "numeric": "291",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "copt": {
+  {
     "code": "Copt",
-    "numeric": "204",
     "name": "Coptic",
+    "numeric": "204",
     "pva": "Coptic",
     "date": "2006-06-21"
   },
-  "cprt": {
+  {
     "code": "Cprt",
-    "numeric": "403",
     "name": "Cypriot",
+    "numeric": "403",
     "pva": "Cypriot",
     "date": "2004-05-01"
   },
-  "cyrl": {
+  {
     "code": "Cyrl",
-    "numeric": "220",
     "name": "Cyrillic",
+    "numeric": "220",
     "pva": "Cyrillic",
     "date": "2004-05-01"
   },
-  "cyrs": {
+  {
     "code": "Cyrs",
-    "numeric": "221",
     "name": "Cyrillic (Old Church Slavonic variant)",
-    "pva": "",
+    "numeric": "221",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "deva": {
+  {
     "code": "Deva",
-    "numeric": "315",
     "name": "Devanagari (Nagari)",
+    "numeric": "315",
     "pva": "Devanagari",
     "date": "2004-05-01"
   },
-  "dsrt": {
+  {
     "code": "Dsrt",
-    "numeric": "250",
     "name": "Deseret (Mormon)",
+    "numeric": "250",
     "pva": "Deseret",
     "date": "2004-05-01"
   },
-  "dupl": {
+  {
     "code": "Dupl",
-    "numeric": "755",
     "name": "Duployan shorthand, Duployan stenography",
+    "numeric": "755",
     "pva": "Duployan",
     "date": "2014-11-15"
   },
-  "egyd": {
+  {
     "code": "Egyd",
-    "numeric": "070",
     "name": "Egyptian demotic",
-    "pva": "",
+    "numeric": "070",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "egyh": {
+  {
     "code": "Egyh",
-    "numeric": "060",
     "name": "Egyptian hieratic",
-    "pva": "",
+    "numeric": "060",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "egyp": {
+  {
     "code": "Egyp",
-    "numeric": "050",
     "name": "Egyptian hieroglyphs",
+    "numeric": "050",
     "pva": "Egyptian_Hieroglyphs",
     "date": "2009-06-01"
   },
-  "elba": {
+  {
     "code": "Elba",
-    "numeric": "226",
     "name": "Elbasan",
+    "numeric": "226",
     "pva": "Elbasan",
     "date": "2014-11-15"
   },
-  "ethi": {
+  {
     "code": "Ethi",
-    "numeric": "430",
     "name": "Ethiopic (Geʻez)",
+    "numeric": "430",
     "pva": "Ethiopic",
     "date": "2004-10-25"
   },
-  "geok": {
+  {
     "code": "Geok",
-    "numeric": "241",
     "name": "Khutsuri (Asomtavruli and Nuskhuri)",
+    "numeric": "241",
     "pva": "Georgian",
     "date": "2012-10-16"
   },
-  "geor": {
+  {
     "code": "Geor",
-    "numeric": "240",
     "name": "Georgian (Mkhedruli)",
+    "numeric": "240",
     "pva": "Georgian",
     "date": "2004-05-29"
   },
-  "glag": {
+  {
     "code": "Glag",
-    "numeric": "225",
     "name": "Glagolitic",
+    "numeric": "225",
     "pva": "Glagolitic",
     "date": "2006-06-21"
   },
-  "goth": {
+  {
     "code": "Goth",
-    "numeric": "206",
     "name": "Gothic",
+    "numeric": "206",
     "pva": "Gothic",
     "date": "2004-05-01"
   },
-  "gran": {
+  {
     "code": "Gran",
-    "numeric": "343",
     "name": "Grantha",
+    "numeric": "343",
     "pva": "Grantha",
     "date": "2014-11-15"
   },
-  "grek": {
+  {
     "code": "Grek",
-    "numeric": "200",
     "name": "Greek",
+    "numeric": "200",
     "pva": "Greek",
     "date": "2004-05-01"
   },
-  "gujr": {
+  {
     "code": "Gujr",
-    "numeric": "320",
     "name": "Gujarati",
+    "numeric": "320",
     "pva": "Gujarati",
     "date": "2004-05-01"
   },
-  "guru": {
+  {
     "code": "Guru",
-    "numeric": "310",
     "name": "Gurmukhi",
+    "numeric": "310",
     "pva": "Gurmukhi",
     "date": "2004-05-01"
   },
-  "hang": {
+  {
+    "code": "Hanb",
+    "name": "Han with Bopomofo (alias for Han + Bopomofo)",
+    "numeric": "503",
+    "pva": null,
+    "date": "2016-01-19"
+  },
+  {
     "code": "Hang",
-    "numeric": "286",
     "name": "Hangul (Hangŭl, Hangeul)",
+    "numeric": "286",
     "pva": "Hangul",
     "date": "2004-05-29"
   },
-  "hani": {
+  {
     "code": "Hani",
-    "numeric": "500",
     "name": "Han (Hanzi, Kanji, Hanja)",
+    "numeric": "500",
     "pva": "Han",
     "date": "2009-02-23"
   },
-  "hano": {
+  {
     "code": "Hano",
-    "numeric": "371",
     "name": "Hanunoo (Hanunóo)",
+    "numeric": "371",
     "pva": "Hanunoo",
     "date": "2004-05-29"
   },
-  "hans": {
+  {
     "code": "Hans",
-    "numeric": "501",
     "name": "Han (Simplified variant)",
-    "pva": "",
+    "numeric": "501",
+    "pva": null,
     "date": "2004-05-29"
   },
-  "hant": {
+  {
     "code": "Hant",
-    "numeric": "502",
     "name": "Han (Traditional variant)",
-    "pva": "",
+    "numeric": "502",
+    "pva": null,
     "date": "2004-05-29"
   },
-  "hatr": {
+  {
     "code": "Hatr",
-    "numeric": "127",
     "name": "Hatran",
+    "numeric": "127",
     "pva": "Hatran",
     "date": "2015-07-07"
   },
-  "hebr": {
+  {
     "code": "Hebr",
-    "numeric": "125",
     "name": "Hebrew",
+    "numeric": "125",
     "pva": "Hebrew",
     "date": "2004-05-01"
   },
-  "hira": {
+  {
     "code": "Hira",
-    "numeric": "410",
     "name": "Hiragana",
+    "numeric": "410",
     "pva": "Hiragana",
     "date": "2004-05-01"
   },
-  "hluw": {
+  {
     "code": "Hluw",
-    "numeric": "080",
     "name": "Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)",
+    "numeric": "080",
     "pva": "Anatolian_Hieroglyphs",
     "date": "2015-07-07"
   },
-  "hmng": {
+  {
     "code": "Hmng",
-    "numeric": "450",
     "name": "Pahawh Hmong",
+    "numeric": "450",
     "pva": "Pahawh_Hmong",
     "date": "2014-11-15"
   },
-  "hrkt": {
+  {
     "code": "Hrkt",
-    "numeric": "412",
     "name": "Japanese syllabaries (alias for Hiragana + Katakana)",
+    "numeric": "412",
     "pva": "Katakana_Or_Hiragana",
     "date": "2011-06-21"
   },
-  "hung": {
+  {
     "code": "Hung",
-    "numeric": "176",
     "name": "Old Hungarian (Hungarian Runic)",
+    "numeric": "176",
     "pva": "Old_Hungarian",
     "date": "2015-07-07"
   },
-  "inds": {
+  {
     "code": "Inds",
-    "numeric": "610",
     "name": "Indus (Harappan)",
-    "pva": "",
+    "numeric": "610",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "ital": {
+  {
     "code": "Ital",
-    "numeric": "210",
     "name": "Old Italic (Etruscan, Oscan, etc.)",
+    "numeric": "210",
     "pva": "Old_Italic",
     "date": "2004-05-29"
   },
-  "java": {
+  {
+    "code": "Jamo",
+    "name": "Jamo (alias for Jamo subset of Hangul)",
+    "numeric": "284",
+    "pva": null,
+    "date": "2016-01-19"
+  },
+  {
     "code": "Java",
-    "numeric": "361",
     "name": "Javanese",
+    "numeric": "361",
     "pva": "Javanese",
     "date": "2009-06-01"
   },
-  "jpan": {
+  {
     "code": "Jpan",
-    "numeric": "413",
     "name": "Japanese (alias for Han + Hiragana + Katakana)",
-    "pva": "",
+    "numeric": "413",
+    "pva": null,
     "date": "2006-06-21"
   },
-  "jurc": {
+  {
     "code": "Jurc",
-    "numeric": "510",
     "name": "Jurchen",
-    "pva": "",
+    "numeric": "510",
+    "pva": null,
     "date": "2010-12-21"
   },
-  "kali": {
+  {
     "code": "Kali",
-    "numeric": "357",
     "name": "Kayah Li",
+    "numeric": "357",
     "pva": "Kayah_Li",
     "date": "2007-07-02"
   },
-  "kana": {
+  {
     "code": "Kana",
-    "numeric": "411",
     "name": "Katakana",
+    "numeric": "411",
     "pva": "Katakana",
     "date": "2004-05-01"
   },
-  "khar": {
+  {
     "code": "Khar",
-    "numeric": "305",
     "name": "Kharoshthi",
+    "numeric": "305",
     "pva": "Kharoshthi",
     "date": "2006-06-21"
   },
-  "khmr": {
+  {
     "code": "Khmr",
-    "numeric": "355",
     "name": "Khmer",
+    "numeric": "355",
     "pva": "Khmer",
     "date": "2004-05-29"
   },
-  "khoj": {
+  {
     "code": "Khoj",
-    "numeric": "322",
     "name": "Khojki",
+    "numeric": "322",
     "pva": "Khojki",
     "date": "2014-11-15"
   },
-  "kitl": {
+  {
     "code": "Kitl",
-    "numeric": "505",
     "name": "Khitan large script",
-    "pva": "",
+    "numeric": "505",
+    "pva": null,
     "date": "2015-07-15"
   },
-  "kits": {
+  {
     "code": "Kits",
-    "numeric": "288",
     "name": "Khitan small script",
-    "pva": "",
+    "numeric": "288",
+    "pva": null,
     "date": "2015-07-15"
   },
-  "knda": {
+  {
     "code": "Knda",
-    "numeric": "345",
     "name": "Kannada",
+    "numeric": "345",
     "pva": "Kannada",
     "date": "2004-05-29"
   },
-  "kore": {
+  {
     "code": "Kore",
-    "numeric": "287",
     "name": "Korean (alias for Hangul + Han)",
-    "pva": "",
+    "numeric": "287",
+    "pva": null,
     "date": "2007-06-13"
   },
-  "kpel": {
+  {
     "code": "Kpel",
-    "numeric": "436",
     "name": "Kpelle",
-    "pva": "",
+    "numeric": "436",
+    "pva": null,
     "date": "2010-03-26"
   },
-  "kthi": {
+  {
     "code": "Kthi",
-    "numeric": "317",
     "name": "Kaithi",
+    "numeric": "317",
     "pva": "Kaithi",
     "date": "2009-06-01"
   },
-  "lana": {
+  {
     "code": "Lana",
-    "numeric": "351",
     "name": "Tai Tham (Lanna)",
+    "numeric": "351",
     "pva": "Tai_Tham",
     "date": "2009-06-01"
   },
-  "laoo": {
+  {
     "code": "Laoo",
-    "numeric": "356",
     "name": "Lao",
+    "numeric": "356",
     "pva": "Lao",
     "date": "2004-05-01"
   },
-  "latf": {
+  {
     "code": "Latf",
-    "numeric": "217",
     "name": "Latin (Fraktur variant)",
-    "pva": "",
+    "numeric": "217",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "latg": {
+  {
     "code": "Latg",
-    "numeric": "216",
     "name": "Latin (Gaelic variant)",
-    "pva": "",
+    "numeric": "216",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "latn": {
+  {
     "code": "Latn",
-    "numeric": "215",
     "name": "Latin",
+    "numeric": "215",
     "pva": "Latin",
     "date": "2004-05-01"
   },
-  "leke": {
+  {
     "code": "Leke",
-    "numeric": "364",
     "name": "Leke",
-    "pva": "",
+    "numeric": "364",
+    "pva": null,
     "date": "2015-07-07"
   },
-  "lepc": {
+  {
     "code": "Lepc",
-    "numeric": "335",
     "name": "Lepcha (Róng)",
+    "numeric": "335",
     "pva": "Lepcha",
     "date": "2007-07-02"
   },
-  "limb": {
+  {
     "code": "Limb",
-    "numeric": "336",
     "name": "Limbu",
+    "numeric": "336",
     "pva": "Limbu",
     "date": "2004-05-29"
   },
-  "lina": {
+  {
     "code": "Lina",
-    "numeric": "400",
     "name": "Linear A",
+    "numeric": "400",
     "pva": "Linear_A",
     "date": "2014-11-15"
   },
-  "linb": {
+  {
     "code": "Linb",
-    "numeric": "401",
     "name": "Linear B",
+    "numeric": "401",
     "pva": "Linear_B",
     "date": "2004-05-29"
   },
-  "lisu": {
+  {
     "code": "Lisu",
-    "numeric": "399",
     "name": "Lisu (Fraser)",
+    "numeric": "399",
     "pva": "Lisu",
     "date": "2009-06-01"
   },
-  "loma": {
+  {
     "code": "Loma",
-    "numeric": "437",
     "name": "Loma",
-    "pva": "",
+    "numeric": "437",
+    "pva": null,
     "date": "2010-03-26"
   },
-  "lyci": {
+  {
     "code": "Lyci",
-    "numeric": "202",
     "name": "Lycian",
+    "numeric": "202",
     "pva": "Lycian",
     "date": "2007-07-02"
   },
-  "lydi": {
+  {
     "code": "Lydi",
-    "numeric": "116",
     "name": "Lydian",
+    "numeric": "116",
     "pva": "Lydian",
     "date": "2007-07-02"
   },
-  "mahj": {
+  {
     "code": "Mahj",
-    "numeric": "314",
     "name": "Mahajani",
+    "numeric": "314",
     "pva": "Mahajani",
     "date": "2014-11-15"
   },
-  "mand": {
+  {
     "code": "Mand",
-    "numeric": "140",
     "name": "Mandaic, Mandaean",
+    "numeric": "140",
     "pva": "Mandaic",
     "date": "2010-07-23"
   },
-  "mani": {
+  {
     "code": "Mani",
-    "numeric": "139",
     "name": "Manichaean",
+    "numeric": "139",
     "pva": "Manichaean",
     "date": "2014-11-15"
   },
-  "marc": {
+  {
     "code": "Marc",
-    "numeric": "332",
     "name": "Marchen",
-    "pva": "",
+    "numeric": "332",
+    "pva": null,
     "date": "2014-11-15"
   },
-  "maya": {
+  {
     "code": "Maya",
-    "numeric": "090",
     "name": "Mayan hieroglyphs",
-    "pva": "",
+    "numeric": "090",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "mend": {
+  {
     "code": "Mend",
-    "numeric": "438",
     "name": "Mende Kikakui",
+    "numeric": "438",
     "pva": "Mende_Kikakui",
     "date": "2014-11-15"
   },
-  "merc": {
+  {
     "code": "Merc",
-    "numeric": "101",
     "name": "Meroitic Cursive",
+    "numeric": "101",
     "pva": "Meroitic_Cursive",
     "date": "2012-02-06"
   },
-  "mero": {
+  {
     "code": "Mero",
-    "numeric": "100",
     "name": "Meroitic Hieroglyphs",
+    "numeric": "100",
     "pva": "Meroitic_Hieroglyphs",
     "date": "2012-02-06"
   },
-  "mlym": {
+  {
     "code": "Mlym",
-    "numeric": "347",
     "name": "Malayalam",
+    "numeric": "347",
     "pva": "Malayalam",
     "date": "2004-05-01"
   },
-  "modi": {
+  {
     "code": "Modi",
-    "numeric": "324",
     "name": "Modi, Moḍī",
+    "numeric": "324",
     "pva": "Modi",
     "date": "2014-11-15"
   },
-  "mong": {
+  {
     "code": "Mong",
-    "numeric": "145",
     "name": "Mongolian",
+    "numeric": "145",
     "pva": "Mongolian",
     "date": "2004-05-01"
   },
-  "moon": {
+  {
     "code": "Moon",
-    "numeric": "218",
     "name": "Moon (Moon code, Moon script, Moon type)",
-    "pva": "",
+    "numeric": "218",
+    "pva": null,
     "date": "2006-12-11"
   },
-  "mroo": {
+  {
     "code": "Mroo",
-    "numeric": "199",
     "name": "Mro, Mru",
+    "numeric": "199",
     "pva": "Mro",
     "date": "2014-11-15"
   },
-  "mtei": {
+  {
     "code": "Mtei",
-    "numeric": "337",
     "name": "Meitei Mayek (Meithei, Meetei)",
+    "numeric": "337",
     "pva": "Meetei_Mayek",
     "date": "2009-06-01"
   },
-  "mult": {
+  {
     "code": "Mult",
-    "numeric": "323",
     "name": "Multani",
+    "numeric": "323",
     "pva": "Multani",
     "date": "2015-07-07"
   },
-  "mymr": {
+  {
     "code": "Mymr",
-    "numeric": "350",
     "name": "Myanmar (Burmese)",
+    "numeric": "350",
     "pva": "Myanmar",
     "date": "2004-05-01"
   },
-  "narb": {
+  {
     "code": "Narb",
-    "numeric": "106",
     "name": "Old North Arabian (Ancient North Arabian)",
+    "numeric": "106",
     "pva": "Old_North_Arabian",
     "date": "2014-11-15"
   },
-  "nbat": {
+  {
     "code": "Nbat",
-    "numeric": "159",
     "name": "Nabataean",
+    "numeric": "159",
     "pva": "Nabataean",
     "date": "2014-11-15"
   },
-  "nkgb": {
+  {
+    "code": "Newa",
+    "name": "Newa, Newar, Newari, Nepāla lipi",
+    "numeric": "333",
+    "pva": null,
+    "date": "2015-12-16"
+  },
+  {
     "code": "Nkgb",
-    "numeric": "420",
     "name": "Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba)",
-    "pva": "",
+    "numeric": "420",
+    "pva": null,
     "date": "2009-02-23"
   },
-  "nkoo": {
+  {
     "code": "Nkoo",
-    "numeric": "165",
     "name": "N’Ko",
+    "numeric": "165",
     "pva": "Nko",
     "date": "2006-10-10"
   },
-  "nshu": {
+  {
     "code": "Nshu",
-    "numeric": "499",
     "name": "Nüshu",
-    "pva": "",
+    "numeric": "499",
+    "pva": null,
     "date": "2010-12-21"
   },
-  "ogam": {
+  {
     "code": "Ogam",
-    "numeric": "212",
     "name": "Ogham",
+    "numeric": "212",
     "pva": "Ogham",
     "date": "2004-05-01"
   },
-  "olck": {
+  {
     "code": "Olck",
-    "numeric": "261",
     "name": "Ol Chiki (Ol Cemet’, Ol, Santali)",
+    "numeric": "261",
     "pva": "Ol_Chiki",
     "date": "2007-07-02"
   },
-  "orkh": {
+  {
     "code": "Orkh",
-    "numeric": "175",
     "name": "Old Turkic, Orkhon Runic",
+    "numeric": "175",
     "pva": "Old_Turkic",
     "date": "2009-06-01"
   },
-  "orya": {
+  {
     "code": "Orya",
-    "numeric": "327",
     "name": "Oriya",
+    "numeric": "327",
     "pva": "Oriya",
     "date": "2004-05-01"
   },
-  "osge": {
+  {
     "code": "Osge",
-    "numeric": "219",
     "name": "Osage",
-    "pva": "",
+    "numeric": "219",
+    "pva": null,
     "date": "2014-11-15"
   },
-  "osma": {
+  {
     "code": "Osma",
-    "numeric": "260",
     "name": "Osmanya",
+    "numeric": "260",
     "pva": "Osmanya",
     "date": "2004-05-01"
   },
-  "palm": {
+  {
     "code": "Palm",
-    "numeric": "126",
     "name": "Palmyrene",
+    "numeric": "126",
     "pva": "Palmyrene",
     "date": "2014-11-15"
   },
-  "pauc": {
+  {
     "code": "Pauc",
-    "numeric": "263",
     "name": "Pau Cin Hau",
+    "numeric": "263",
     "pva": "Pau_Cin_Hau",
     "date": "2014-11-15"
   },
-  "perm": {
+  {
     "code": "Perm",
-    "numeric": "227",
     "name": "Old Permic",
+    "numeric": "227",
     "pva": "Old_Permic",
     "date": "2014-11-15"
   },
-  "phag": {
+  {
     "code": "Phag",
-    "numeric": "331",
     "name": "Phags-pa",
+    "numeric": "331",
     "pva": "Phags_Pa",
     "date": "2006-10-10"
   },
-  "phli": {
+  {
     "code": "Phli",
-    "numeric": "131",
     "name": "Inscriptional Pahlavi",
+    "numeric": "131",
     "pva": "Inscriptional_Pahlavi",
     "date": "2009-06-01"
   },
-  "phlp": {
+  {
     "code": "Phlp",
-    "numeric": "132",
     "name": "Psalter Pahlavi",
+    "numeric": "132",
     "pva": "Psalter_Pahlavi",
     "date": "2014-11-15"
   },
-  "phlv": {
+  {
     "code": "Phlv",
-    "numeric": "133",
     "name": "Book Pahlavi",
-    "pva": "",
+    "numeric": "133",
+    "pva": null,
     "date": "2007-07-15"
   },
-  "phnx": {
+  {
     "code": "Phnx",
-    "numeric": "115",
     "name": "Phoenician",
+    "numeric": "115",
     "pva": "Phoenician",
     "date": "2006-10-10"
   },
-  "plrd": {
+  {
     "code": "Plrd",
-    "numeric": "282",
     "name": "Miao (Pollard)",
+    "numeric": "282",
     "pva": "Miao",
     "date": "2012-02-06"
   },
-  "prti": {
+  {
+    "code": "Piqd",
+    "name": "Klingon (KLI pIqaD)",
+    "numeric": "293",
+    "pva": null,
+    "date": "2015-12-16"
+  },
+  {
     "code": "Prti",
-    "numeric": "130",
     "name": "Inscriptional Parthian",
+    "numeric": "130",
     "pva": "Inscriptional_Parthian",
     "date": "2009-06-01"
   },
-  "qaaa": {
+  {
     "code": "Qaaa",
-    "numeric": "900",
     "name": "Reserved for private use (start)",
-    "pva": "",
+    "numeric": "900",
+    "pva": null,
     "date": "2004-05-29"
   },
-  "qabx": {
+  {
     "code": "Qabx",
-    "numeric": "949",
     "name": "Reserved for private use (end)",
-    "pva": "",
+    "numeric": "949",
+    "pva": null,
     "date": "2004-05-29"
   },
-  "rjng": {
+  {
     "code": "Rjng",
-    "numeric": "363",
     "name": "Rejang (Redjang, Kaganga)",
+    "numeric": "363",
     "pva": "Rejang",
     "date": "2009-02-23"
   },
-  "roro": {
+  {
     "code": "Roro",
-    "numeric": "620",
     "name": "Rongorongo",
-    "pva": "",
+    "numeric": "620",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "runr": {
+  {
     "code": "Runr",
-    "numeric": "211",
     "name": "Runic",
+    "numeric": "211",
     "pva": "Runic",
     "date": "2004-05-01"
   },
-  "samr": {
+  {
     "code": "Samr",
-    "numeric": "123",
     "name": "Samaritan",
+    "numeric": "123",
     "pva": "Samaritan",
     "date": "2009-06-01"
   },
-  "sara": {
+  {
     "code": "Sara",
-    "numeric": "292",
     "name": "Sarati",
-    "pva": "",
+    "numeric": "292",
+    "pva": null,
     "date": "2004-05-29"
   },
-  "sarb": {
+  {
     "code": "Sarb",
-    "numeric": "105",
     "name": "Old South Arabian",
+    "numeric": "105",
     "pva": "Old_South_Arabian",
     "date": "2009-06-01"
   },
-  "saur": {
+  {
     "code": "Saur",
-    "numeric": "344",
     "name": "Saurashtra",
+    "numeric": "344",
     "pva": "Saurashtra",
     "date": "2007-07-02"
   },
-  "sgnw": {
+  {
     "code": "Sgnw",
-    "numeric": "095",
     "name": "SignWriting",
+    "numeric": "095",
     "pva": "SignWriting",
     "date": "2015-07-07"
   },
-  "shaw": {
+  {
     "code": "Shaw",
-    "numeric": "281",
     "name": "Shavian (Shaw)",
+    "numeric": "281",
     "pva": "Shavian",
     "date": "2004-05-01"
   },
-  "shrd": {
+  {
     "code": "Shrd",
-    "numeric": "319",
     "name": "Sharada, Śāradā",
+    "numeric": "319",
     "pva": "Sharada",
     "date": "2012-02-06"
   },
-  "sidd": {
+  {
     "code": "Sidd",
-    "numeric": "302",
     "name": "Siddham, Siddhaṃ, Siddhamātṛkā",
+    "numeric": "302",
     "pva": "Siddham",
     "date": "2014-11-15"
   },
-  "sind": {
+  {
     "code": "Sind",
-    "numeric": "318",
     "name": "Khudawadi, Sindhi",
+    "numeric": "318",
     "pva": "Khudawadi",
     "date": "2014-11-15"
   },
-  "sinh": {
+  {
     "code": "Sinh",
-    "numeric": "348",
     "name": "Sinhala",
+    "numeric": "348",
     "pva": "Sinhala",
     "date": "2004-05-01"
   },
-  "sora": {
+  {
     "code": "Sora",
-    "numeric": "398",
     "name": "Sora Sompeng",
+    "numeric": "398",
     "pva": "Sora_Sompeng",
     "date": "2012-02-06"
   },
-  "sund": {
+  {
     "code": "Sund",
-    "numeric": "362",
     "name": "Sundanese",
+    "numeric": "362",
     "pva": "Sundanese",
     "date": "2007-07-02"
   },
-  "sylo": {
+  {
     "code": "Sylo",
-    "numeric": "316",
     "name": "Syloti Nagri",
+    "numeric": "316",
     "pva": "Syloti_Nagri",
     "date": "2006-06-21"
   },
-  "syrc": {
+  {
     "code": "Syrc",
-    "numeric": "135",
     "name": "Syriac",
+    "numeric": "135",
     "pva": "Syriac",
     "date": "2004-05-01"
   },
-  "syre": {
+  {
     "code": "Syre",
-    "numeric": "138",
     "name": "Syriac (Estrangelo variant)",
-    "pva": "",
+    "numeric": "138",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "syrj": {
+  {
     "code": "Syrj",
-    "numeric": "137",
     "name": "Syriac (Western variant)",
-    "pva": "",
+    "numeric": "137",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "syrn": {
+  {
     "code": "Syrn",
-    "numeric": "136",
     "name": "Syriac (Eastern variant)",
-    "pva": "",
+    "numeric": "136",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "tagb": {
+  {
     "code": "Tagb",
-    "numeric": "373",
     "name": "Tagbanwa",
+    "numeric": "373",
     "pva": "Tagbanwa",
     "date": "2004-05-01"
   },
-  "takr": {
+  {
     "code": "Takr",
-    "numeric": "321",
     "name": "Takri, Ṭākrī, Ṭāṅkrī",
+    "numeric": "321",
     "pva": "Takri",
     "date": "2012-02-06"
   },
-  "tale": {
+  {
     "code": "Tale",
-    "numeric": "353",
     "name": "Tai Le",
+    "numeric": "353",
     "pva": "Tai_Le",
     "date": "2004-10-25"
   },
-  "talu": {
+  {
     "code": "Talu",
-    "numeric": "354",
     "name": "New Tai Lue",
+    "numeric": "354",
     "pva": "New_Tai_Lue",
     "date": "2006-06-21"
   },
-  "taml": {
+  {
     "code": "Taml",
-    "numeric": "346",
     "name": "Tamil",
+    "numeric": "346",
     "pva": "Tamil",
     "date": "2004-05-01"
   },
-  "tang": {
+  {
     "code": "Tang",
-    "numeric": "520",
     "name": "Tangut",
-    "pva": "",
+    "numeric": "520",
+    "pva": null,
     "date": "2010-12-21"
   },
-  "tavt": {
+  {
     "code": "Tavt",
-    "numeric": "359",
     "name": "Tai Viet",
+    "numeric": "359",
     "pva": "Tai_Viet",
     "date": "2009-06-01"
   },
-  "telu": {
+  {
     "code": "Telu",
-    "numeric": "340",
     "name": "Telugu",
+    "numeric": "340",
     "pva": "Telugu",
     "date": "2004-05-01"
   },
-  "teng": {
+  {
     "code": "Teng",
-    "numeric": "290",
     "name": "Tengwar",
-    "pva": "",
+    "numeric": "290",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "tfng": {
+  {
     "code": "Tfng",
-    "numeric": "120",
     "name": "Tifinagh (Berber)",
+    "numeric": "120",
     "pva": "Tifinagh",
     "date": "2006-06-21"
   },
-  "tglg": {
+  {
     "code": "Tglg",
-    "numeric": "370",
     "name": "Tagalog (Baybayin, Alibata)",
+    "numeric": "370",
     "pva": "Tagalog",
     "date": "2009-02-23"
   },
-  "thaa": {
+  {
     "code": "Thaa",
-    "numeric": "170",
     "name": "Thaana",
+    "numeric": "170",
     "pva": "Thaana",
     "date": "2004-05-01"
   },
-  "thai": {
+  {
     "code": "Thai",
-    "numeric": "352",
     "name": "Thai",
+    "numeric": "352",
     "pva": "Thai",
     "date": "2004-05-01"
   },
-  "tibt": {
+  {
     "code": "Tibt",
-    "numeric": "330",
     "name": "Tibetan",
+    "numeric": "330",
     "pva": "Tibetan",
     "date": "2004-05-01"
   },
-  "tirh": {
+  {
     "code": "Tirh",
-    "numeric": "326",
     "name": "Tirhuta",
+    "numeric": "326",
     "pva": "Tirhuta",
     "date": "2014-11-15"
   },
-  "ugar": {
+  {
     "code": "Ugar",
-    "numeric": "040",
     "name": "Ugaritic",
+    "numeric": "040",
     "pva": "Ugaritic",
     "date": "2004-05-01"
   },
-  "vaii": {
+  {
     "code": "Vaii",
-    "numeric": "470",
     "name": "Vai",
+    "numeric": "470",
     "pva": "Vai",
     "date": "2007-07-02"
   },
-  "visp": {
+  {
     "code": "Visp",
-    "numeric": "280",
     "name": "Visible Speech",
-    "pva": "",
+    "numeric": "280",
+    "pva": null,
     "date": "2004-05-01"
   },
-  "wara": {
+  {
     "code": "Wara",
-    "numeric": "262",
     "name": "Warang Citi (Varang Kshiti)",
+    "numeric": "262",
     "pva": "Warang_Citi",
     "date": "2014-11-15"
   },
-  "wole": {
+  {
     "code": "Wole",
-    "numeric": "480",
     "name": "Woleai",
-    "pva": "",
+    "numeric": "480",
+    "pva": null,
     "date": "2010-12-21"
   },
-  "xpeo": {
+  {
     "code": "Xpeo",
-    "numeric": "030",
     "name": "Old Persian",
+    "numeric": "030",
     "pva": "Old_Persian",
     "date": "2006-06-21"
   },
-  "xsux": {
+  {
     "code": "Xsux",
-    "numeric": "020",
     "name": "Cuneiform, Sumero-Akkadian",
+    "numeric": "020",
     "pva": "Cuneiform",
     "date": "2006-10-10"
   },
-  "yiii": {
+  {
     "code": "Yiii",
-    "numeric": "460",
     "name": "Yi",
+    "numeric": "460",
     "pva": "Yi",
     "date": "2004-05-01"
   },
-  "zinh": {
+  {
     "code": "Zinh",
-    "numeric": "994",
     "name": "Code for inherited script",
+    "numeric": "994",
     "pva": "Inherited",
     "date": "2009-02-23"
   },
-  "zmth": {
+  {
     "code": "Zmth",
-    "numeric": "995",
     "name": "Mathematical notation",
-    "pva": "",
+    "numeric": "995",
+    "pva": null,
     "date": "2007-11-26"
   },
-  "zsym": {
+  {
+    "code": "Zsye",
+    "name": "Symbols (Emoji variant)",
+    "numeric": "993",
+    "pva": null,
+    "date": "2015-12-16"
+  },
+  {
     "code": "Zsym",
-    "numeric": "996",
     "name": "Symbols",
-    "pva": "",
+    "numeric": "996",
+    "pva": null,
     "date": "2007-11-26"
   },
-  "zxxx": {
+  {
     "code": "Zxxx",
-    "numeric": "997",
     "name": "Code for unwritten documents",
-    "pva": "",
+    "numeric": "997",
+    "pva": null,
     "date": "2011-06-21"
   },
-  "zyyy": {
+  {
     "code": "Zyyy",
-    "numeric": "998",
     "name": "Code for undetermined script",
+    "numeric": "998",
     "pva": "Common",
     "date": "2004-05-29"
   },
-  "zzzz": {
+  {
     "code": "Zzzz",
-    "numeric": "999",
     "name": "Code for uncoded script",
+    "numeric": "999",
     "pva": "Unknown",
     "date": "2006-10-10"
   }
-}
-},{}],2:[function(require,module,exports){
-'use strict';
-
-/*
- * Dependencies.
- */
-
-var Interface = require('datamap-interface');
-
-/*
- * Data.
- */
-
-var codes = require('./data/iso-15924.json');
-
-/*
- * Expose codes, cased codes, and numeric codes..
- */
-
-var dictionary = {};
-var code;
-
-for (code in codes) {
-    dictionary[codes[code].numeric] = dictionary[codes[code].code] =
-        dictionary[code] = codes[code];
-}
-
-/*
- * Expose ISO-15924.
- */
-
-module.exports = new Interface(dictionary);
-
-},{"./data/iso-15924.json":1,"datamap-interface":3}],3:[function(require,module,exports){
-'use strict';
-
-/*
- * Cache.
- */
-
-var isOwnProperty;
-
-isOwnProperty = Object.prototype.hasOwnProperty;
-
-/**
- * An interface for a map of items.
- *
- * @constructor
- * @param {Object.<string, *>} values
- */
-function DatamapInterface(values) {
-    this.map = {};
-
-    this.add(values);
-}
-
-/**
- * Detect if a key is defined on an object.
- *
- * @param {Object.<string, *>} object
- * @param {string} key
- * @return {boolean}
- */
-function has(object, key) {
-    return isOwnProperty.call(object, key) && object[key] !== undefined;
-}
-
-/**
- * Loop over an `Object`.
- *
- * @param {Object.<string, *>} object
- * @param {function(string, *)} callback
- */
-function forPropertyInObject(object, callback) {
-    var key;
-
-    for (key in object) {
-        if (has(object, key)) {
-            callback(object[key], key);
-        }
-    }
-}
-
-/**
- * Loop over an `Array`.
- *
- * @param {Array.<*>} array
- * @param {function(*, number)} callback
- */
-function forValueInArray(array, callback) {
-    var index,
-        length;
-
-    index = -1;
-    length = array.length;
-
-    while (++index < length) {
-        callback(array[index], index);
-    }
-}
-
-/**
- * Add all `values` to `object`.
- *
- * @param {Object.<string, *>} object
- * @param {Object.<string, *>} values
- */
-function addAll(object, values) {
-    forPropertyInObject(values, function (value, key) {
-        object[key] = value;
-    });
-}
-
-/**
- * Remove every key in `keys` from `object`.
- *
- * @param {Object.<string, *>} object
- * @param {Array.<string>} keys
- */
-function removeAll(object, keys) {
-    forValueInArray(keys, function (key) {
-        object[key] = undefined;
-    });
-}
-
-/**
- * Add values to map.
- *
- * When the second argument is passed, it is treated as
- * a single value and the first parameter as a key.
- * Otherwise, every value in the first argument is added.
- *
- * @this DatamapInterface
- * @param {Object.<string, *>|string} values
- * @param {*} value
- */
-function add(values, value) {
-    var self;
-
-    self = this;
-
-    if (value) {
-        self.map[values] = value;
-    } else {
-        addAll(self.map, values);
-    }
-
-    return self;
-}
-
-/**
- * Remove keys from map.
- *
- * When the second argument is passed, it is treated as
- * a single value and the first parameter as a key.
- * Otherwise, every value in the first argument is added.
- *
- * @this DatamapInterface
- * @param {Array.<string>|string} keys
- */
-function remove(keys) {
-    var self;
-
-    self = this;
-
-    if (typeof keys === 'string') {
-        self.map[keys] = undefined;
-    } else {
-        removeAll(self.map, keys);
-    }
-
-    return self;
-}
-
-/**
- * Get all values.
- *
- * @this DatamapInterface
- * @return {Object.<string, *>}
- */
-function all() {
-    var values;
-
-    values = {};
-
-    addAll(values, this.map);
-
-    return values;
-}
-
-/**
- * Get all keys.
- *
- * @this DatamapInterface
- * @return {Array.<string>}
- */
-function getKeys() {
-    var result,
-        index;
-
-    result = [];
-
-    index = -1;
-
-    forPropertyInObject(this.map, function (value, key) {
-        result[++index] = key;
-    });
-
-    return result;
-}
-
-/**
- * Get a value.
- *
- * @this DatamapInterface
- * @param {string} key
- * @return {*}
- */
-function get(key) {
-    return has(this.map, key) ? this.map[key] : null;
-}
-
-/**
- * Whether or not `value` is in context.
- *
- * @this DatamapInterface
- * @param {string} key
- * @return {boolean}
- */
-function datamapHas(key) {
-    return has(this.map, key);
-}
-
-/*
- * Expose methods on prototype.
- */
-
-var datamapInterfacePrototype;
-
-datamapInterfacePrototype = DatamapInterface.prototype;
-
-datamapInterfacePrototype.add = add;
-datamapInterfacePrototype.remove = remove;
-datamapInterfacePrototype.all = all;
-datamapInterfacePrototype.valueOf = all;
-datamapInterfacePrototype.toJSON = all;
-datamapInterfacePrototype.get = get;
-datamapInterfacePrototype.has = datamapHas;
-datamapInterfacePrototype.is = datamapHas;
-datamapInterfacePrototype.keys = getKeys;
-
-/*
- * Expose `DatamapInterface`.
- */
-
-module.exports = DatamapInterface;
-
-},{}]},{},[2])(2)
-});
+]

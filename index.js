@@ -1,31 +1,17 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module iso-15924
+ * @fileoverview ISO 15924 codes in an accessible format.
+ */
+
 'use strict';
 
-/*
- * Dependencies.
- */
-
-var Interface = require('datamap-interface');
+/* eslint-env commonjs */
 
 /*
- * Data.
+ * Expose.
  */
 
-var codes = require('./data/iso-15924.json');
-
-/*
- * Expose codes, cased codes, and numeric codes..
- */
-
-var dictionary = {};
-var code;
-
-for (code in codes) {
-    dictionary[codes[code].numeric] = dictionary[codes[code].code] =
-        dictionary[code] = codes[code];
-}
-
-/*
- * Expose ISO-15924.
- */
-
-module.exports = new Interface(dictionary);
+module.exports = require('./index.json');

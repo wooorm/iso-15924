@@ -1,10 +1,6 @@
 .DS_Store
 *.log
-bower_components/
-build/
-components/
-node_modules/
 coverage/
-build.js
-data/iso-15924.txt
-data/iso-15924.zip
+node_modules/
+iso-15924.js
+iso-15924.min.js

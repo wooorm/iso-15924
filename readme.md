@@ -1,58 +1,123 @@
-# iso-15924 [![Build Status](https://img.shields.io/travis/wooorm/iso-15924.svg)](https://travis-ci.org/wooorm/iso-15924) [![Coverage Status](https://img.shields.io/codecov/c/github/wooorm/iso-15924.svg)](https://codecov.io/github/wooorm/iso-15924)
+# iso-15924 [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
 
-[ISO-15924](http://www.unicode.org/iso15924/) codes in an accessible format.
+[ISO 15924][iso] codes in an accessible format, all of them.
 
 ## Installation
 
-[npm](https://docs.npmjs.com/cli/install):
+[npm][]:
 
 ```bash
 npm install iso-15924
 ```
 
-**iso-15924** is also available for [bower](http://bower.io/#install-packages),
-[component](https://github.com/componentjs/component), and
-[duo](http://duojs.org/#getting-started), and as an AMD, CommonJS, and globals
-module, [uncompressed](iso-15924.js) and
-[compressed](iso-15924.min.js).
+**iso-15924** is also available as an AMD, CommonJS, and globals
+module, [uncompressed and compressed][releases].
 
 ## Usage
 
-```js
+Dependencies:
+
+```javascript
 var iso15924 = require('iso-15924');
+```
 
-iso15924.get('Latn');
-/**
- * // you can also use the lower-case code (e.g., `latn`).
- * { code: 'Latn',
- *   numeric: '215',
- *   name: 'Latin',
- *   pva: 'Latin',
- *   date: '2004-05-01' }
- */
+Inspecting some values yields:
 
-iso15924.get('501');
-/**
- * { code: 'Hans',
- *   numeric: '501',
- *   name: 'Han (Simplified variant)',
- *   pva: '',
- *   date: '2004-05-29' }
- */
+```js
+[ { code: 'Adlm',
+    name: 'Adlam',
+    numeric: '166',
+    pva: null,
+    date: '2014-11-15' },
+  { code: 'Afak',
+    name: 'Afaka',
+    numeric: '439',
+    pva: null,
+    date: '2010-12-21' },
+  { code: 'Aghb',
+    name: 'Caucasian Albanian',
+    numeric: '239',
+    pva: 'Caucasian_Albanian',
+    date: '2014-11-15' },
+  { code: 'Ahom',
+    name: 'Ahom, Tai Ahom',
+    numeric: '338',
+    pva: 'Ahom',
+    date: '2015-07-07' },
+  { code: 'Arab',
+    name: 'Arabic',
+    numeric: '160',
+    pva: 'Arabic',
+    date: '2004-05-01' },
+  { code: 'Aran',
+    name: 'Arabic (Nastaliq variant)',
+    numeric: '161',
+    pva: null,
+    date: '2014-11-15' },
+  { code: 'Armi',
+    name: 'Imperial Aramaic',
+    numeric: '124',
+    pva: 'Imperial_Aramaic',
+    date: '2009-06-01' },
+  { code: 'Armn',
+    name: 'Armenian',
+    numeric: '230',
+    pva: 'Armenian',
+    date: '2004-05-01' },
+  { code: 'Avst',
+    name: 'Avestan',
+    numeric: '134',
+    pva: 'Avestan',
+    date: '2009-06-01' },
+  { code: 'Bali',
+    name: 'Balinese',
+    numeric: '360',
+    pva: 'Balinese',
+    date: '2006-10-10' } ]
+```
 
-iso15924.has('Unic'); // false
+And the `length` computes to:
 
-iso15924.all(); // An object with 531 script-objects.
+```js
+182
 ```
 
 ## API
 
-See [the **datamap-interface** API](https://github.com/wooorm/datamap-interface).
+### `iso15924`
 
-## Support
+`Array.<Script>` — List of scripts.
 
-See [support.md](support.md).
+### `Script`
+
+`Object`:
+
+*   `name` (`string`) — Script name;
+*   `code` (`string`) — Four-character ISO 15924 code;
+*   `numeric` (`string`) — Three-character ISO 15924 code;
+*   `date` (`string`) — Date of addition;
+*   `pva` (`string?`) — Property Value Alias;
 
 ## License
 
-[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
+[MIT][license] © [Titus Wormer][author]
+
+<!-- Definition -->
+
+[build-badge]: https://img.shields.io/travis/wooorm/iso-15924.svg
+
+[build-page]: https://travis-ci.org/wooorm/iso-15924
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/iso-15924.svg
+
+[coverage-page]: https://codecov.io/github/wooorm/iso-15924?branch=master
+
+[npm]: https://docs.npmjs.com/cli/install
+
+[releases]: https://github.com/wooorm/iso-15924/releases
+
+[license]: LICENSE
+
+[author]: http://wooorm.com
+
+[iso]: http://unicode.org/iso15924/
