@@ -29,12 +29,8 @@
     "concat-stream": "^1.5.1",
     "d3-dsv": "^0.3.0",
     "esmangle": "^1.0.1",
-    "remark": "^4.0.0",
-    "remark-comment-config": "^3.0.0",
-    "remark-github": "^4.0.1",
-    "remark-lint": "^3.0.0",
-    "remark-usage": "^3.0.0",
-    "remark-validate-links": "^3.0.0",
+    "remark-cli": "^2.1.0",
+    "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.4.0",
     "unzip": "^0.1.11",
     "xo": "^0.17.0"
@@ -54,5 +50,8 @@
     "ignores": [
       "iso-15924.js"
     ]
+  },
+  "remarkConfig": {
+    "presets": "wooorm"
   }
 }

@@ -103,8 +103,6 @@ Yields:
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[releases]: https://github.com/wooorm/iso-15924/releases
-
 [license]: LICENSE
 
 [author]: http://wooorm.com
