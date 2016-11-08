@@ -10,18 +10,17 @@
 npm install iso-15924
 ```
 
-**iso-15924** is also available as an AMD, CommonJS, and globals
-module, [uncompressed and compressed][releases].
-
 ## Usage
-
-Dependencies:
 
 ```javascript
 var iso15924 = require('iso-15924');
+
+iso15924.length; //=> 182
+
+console.log(iso15924.slice(0, 10));
 ```
 
-Inspecting some values yields:
+Yields:
 
 ```js
 [ { code: 'Adlm',
@@ -74,12 +73,6 @@ Inspecting some values yields:
     numeric: '360',
     pva: 'Balinese',
     date: '2006-10-10' } ]
-```
-
-And the `length` computes to:
-
-```js
-182
 ```
 
 ## API
