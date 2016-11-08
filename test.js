@@ -15,7 +15,7 @@
  */
 
 var test = require('tape');
-var iso15924 = require('./index.js');
+var iso15924 = require('./');
 
 /*
  * Tests.

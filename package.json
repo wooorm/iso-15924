@@ -13,20 +13,17 @@
     "names",
     "information"
   ],
-  "dependencies": {},
-  "files": [
-    "index.js",
-    "index.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/iso-15924.git"
-  },
+  "repository": "https://github.com/wooorm/iso-15924",
   "bugs": "https://github.com/wooorm/iso-15924/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",
     "concat-stream": "^1.5.1",
@@ -48,7 +45,7 @@
   "scripts": {
     "build-crawl": "./script/build.js",
     "build-md": "remark . --quiet --frail",
-    "build-bundle": "browserify index.js --bare -s iso15924 > iso-15924.js",
+    "build-bundle": "browserify index.json --bare -s iso15924 > iso-15924.js",
     "build-mangle": "esmangle iso-15924.js > iso-15924.min.js",
     "build": "npm run build-crawl && npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint-api": "eslint .",
