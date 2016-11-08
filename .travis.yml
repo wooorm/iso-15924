@@ -1,11 +1,7 @@
 language: node_js
 node_js:
-- '0.10'
-- '0.11'
-- '0.12'
 - '4.0'
-- '5.0'
-sudo: false
+- '7.0'
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -13,7 +9,7 @@ deploy:
       secure: LOxUCYH2vmliKyRYmmy/aepaGrct8ZKDLeMqsed1+6PE+zYd63qGt3uOKrHHr4+J2f+scRQqpovpLDkCi/2uIV0GHh/ui6y2olEVjQENiu+dYA3g0n9fK7ovlFeUgI1cunhj91AqEtB3lHSM4tf7U5qcUNGe0rdVrziuQ+k26X8PxUxl22thSw4lpR3iW0d/PoXXws7OvIy7Y9i9eGCXZLkRf+hSZ+oNuqpttRAcXAazIZqUbXoF8jjno1YHcj5x9PXulsdPvM7uQqAEM/NRBxQKxZp/6RuS7c3MlgGakPfc8Ybnz75Wjac/G/vBCBba9gtbTdMr3PpaD8jjAZmJm4X1iQ1MfknSCVao60pLrp3QFk9PvoEHoU6OkxITN94aNHKhwlsZYK72mMx2Dd7FMMXI6BYoOByXwFgVvVQEU4JT8BIyWWm71BMDhGEa+EFlYt04ykQMlnGusanKJ3dlx2NsEWYAGY7OTUjMgF5d78J7RYJVKl/jGNxnuUu/++SVYeuTuJlGXOJPwaGo/GM5MnWPd3ZS+Xe9FDFXjKJKelSXIk8refN6bh9iXZri8Tkc+vhdSEnYyEzgpXv+lRrY1+jpnAcXf5uXdRIUqqtFOuOj9NAi/5v8Fw+TCmKKAveuqqM3Zer0x3WUXjHI55XOl/gKI/0Ss0buDx+IX1BLo58=
     on:
       tags: true
-      node: '5.0'
+      node: '4.0'
   - provider: releases
     api_key:
       secure: Yv8guLLfB3EM19U4rmIFV1GFi8I8G11bq27U6/VnNqhi6IOet/NyDiG544XHNKNCNJ4Jfm+Sh3CfE+qz9HV2vuniDgdkbaZLXYAKJyZYFclQVw0qO6lbyWTcim+aasYlwdofSb5Rw1T+gcmADZoCvsn0ZC1Dl4DaOpPk8Q16wDPyZ4UrSx6EGxAKnWHUQ5hGwicCmjFBZ/zs1nxTsA31Xn/fwtalpGyYmam/FIqI2IT0d2K+oaKAXqfF8ZrUBAVVktb+ARpp7wlqgZGAsEfT5olmMmNh8b2mcAbHzYQ+NNyJdqky1mAyi42tuEwW4eF954gvfIUb3Z8CafjWGC/e0AzCs+NVZPVwomndF4BOI5aZbA0NVMOqQBkvRHyEUyCnMIAnn5+kiQbMAAMZdiOZcAu7RiU8hPyADj2mkd55zjCYuBNDp8yPKebjaGolDDDLWnX7x6zvzPxlTFC2Dj/XrF3iZt3t/aPHLpi+Yab3j8Dm6OqmRwwvAAoOX+zrQNcIs2oXbP/SupOeq5HJQtdlwjrnjh8W+tYDIl3gJr4c4Ef0/3n00mb2tqw0PhMKc6VxNf2vZStb/UVPPwEHulA8p2I2bws9ZLtcEAs+BiJGx8lMKwQakGGIpKxXlT0RVjvOfXPcy3w6sUMuIeCw1xKJrGgMCeMB38von8SPcyLf4a4=
@@ -22,3 +18,4 @@ deploy:
       - "iso-15924.min.js"
     on:
       tags: true
+      node: '7.0'
