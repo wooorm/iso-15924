@@ -1,4 +1,4 @@
-# iso-15924 [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# iso-15924 [![Build Status][build-badge]][build-page]
 
 [ISO 15924][iso] codes in an accessible format, all of them.
 
@@ -107,10 +107,6 @@ And the `length` computes to:
 [build-badge]: https://img.shields.io/travis/wooorm/iso-15924.svg
 
 [build-page]: https://travis-ci.org/wooorm/iso-15924
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/iso-15924.svg
-
-[coverage-page]: https://codecov.io/github/wooorm/iso-15924?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
