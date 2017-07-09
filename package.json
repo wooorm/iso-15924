@@ -31,10 +31,10 @@
     "d3-dsv": "^1.0.0",
     "esmangle": "^1.0.1",
     "remark-cli": "^3.0.0",
-    "remark-preset-wooorm": "^2.0.0",
+    "remark-preset-wooorm": "^3.0.0",
     "tape": "^4.4.0",
     "unzip": "^0.1.11",
-    "xo": "^0.17.0",
+    "xo": "^0.18.0",
     "xtend": "^4.0.1"
   },
   "scripts": {
@@ -49,11 +49,14 @@
   },
   "xo": {
     "space": true,
+    "esnext": false,
     "ignores": [
       "iso-15924.js"
     ]
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
