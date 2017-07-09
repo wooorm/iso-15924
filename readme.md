@@ -91,6 +91,13 @@ Yields:
 *   `date` (`string`) — Date of addition;
 *   `pva` (`string?`) — Property Value Alias;
 
+## Related
+
+*   [`iso-639-2`](https://github.com/wooorm/iso-639-2)
+    — ISO 639-2 codes
+*   [`iso-639-3`](https://github.com/wooorm/iso-639-3)
+    — ISO 639-3 codes
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
