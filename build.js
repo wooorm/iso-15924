@@ -1,6 +1,5 @@
 'use strict'
 
-/* Dependencies. */
 var fs = require('fs')
 var zlib = require('zlib')
 var path = require('path')
@@ -11,61 +10,68 @@ var zip = require('unzip').Parse
 var dsv = require('d3-dsv')
 var bail = require('bail')
 var xtend = require('xtend')
+var not = require('not')
 
-/* Core. */
-http
-  .request(
-    xtend(url.parse('http://www.unicode.org/iso15924/iso15924.txt.zip'), {
-      headers: {'accept-encoding': 'gzip,deflate'}
-    }),
-    function(res) {
-      res
-        .pipe(zlib.createGunzip())
-        .pipe(zip())
-        .on('entry', function(entry) {
-          if (path.basename(entry.path) !== 'iso15924-utf8-20160119.txt') {
-            entry.autodrain()
-            return
-          }
+var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
 
-          entry
-            .pipe(
-              concat(function(body) {
-                var data = String(body)
-                  .split('\n')
-                  .filter(function(line) {
-                    return line.charAt(0) !== '#'
-                  })
-                  .join('\n')
+var opts = xtend(
+  url.parse('http://www.unicode.org/iso15924/iso15924.txt.zip'),
+  {
+    headers: {'accept-encoding': 'gzip,deflate'}
+  }
+)
 
-                data =
-                  ['code', 'numeric', 'english', 'french', 'pva', 'date'].join(
-                    ';'
-                  ) + data
+var found = true
 
-                data = dsv
-                  .dsvFormat(';')
-                  .parse(data)
-                  .map(function(script) {
-                    return {
-                      code: script.code,
-                      name: script.english,
-                      numeric: script.numeric,
-                      pva: script.pva || null,
-                      date: script.date
-                    }
-                  })
+process.on('exit', onexit)
 
-                fs.writeFile(
-                  'index.json',
-                  JSON.stringify(data, 0, 2) + '\n',
-                  bail
-                )
-              })
-            )
-            .on('error', bail)
-        })
-        .on('error', bail)
-    }
-  )
-  .end()
+http.request(opts, onconnection).end()
+
+function onexit() {
+  if (!found) {
+    throw new Error('File not found')
+  }
+}
+
+function onconnection(res) {
+  res
+    .pipe(zlib.createGunzip())
+    .pipe(zip())
+    .on('entry', onentry)
+    .on('error', bail)
+}
+
+function onentry(entry) {
+  if (path.basename(entry.path) === 'iso15924-utf8-20171121.txt') {
+    found = true
+    entry.pipe(concat(onconcat)).on('error', bail)
+  } else {
+    entry.autodrain()
+  }
+}
+
+function onconcat(body) {
+  var data = String(body)
+    .split('\n')
+    .filter(not(comment))
+    .join('\n')
+
+  data = dsv
+    .dsvFormat(';')
+    .parse(headers.join(';') + data)
+    .map(function(script) {
+      return {
+        code: script.code,
+        name: script.english,
+        numeric: script.numeric,
+        pva: script.pva || null,
+        date: script.date
+      }
+    })
+
+  fs.writeFile('index.json', JSON.stringify(data, null, 2) + '\n', bail)
+}
+
+function comment(line) {
+  return line.charAt(0) === '#'
+}
