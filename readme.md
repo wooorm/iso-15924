@@ -15,7 +15,7 @@ npm install iso-15924
 ```javascript
 var iso15924 = require('iso-15924')
 
-iso15924.length // => 182
+iso15924.length // => 197
 
 console.log(iso15924.slice(0, 10))
 ```
@@ -26,8 +26,8 @@ Yields:
 [ { code: 'Adlm',
     name: 'Adlam',
     numeric: '166',
-    pva: null,
-    date: '2014-11-15' },
+    pva: 'Adlam',
+    date: '2016-12-05' },
   { code: 'Afak',
     name: 'Afaka',
     numeric: '439',
@@ -85,11 +85,11 @@ Yields:
 
 `Object`:
 
-*   `name` (`string`) — Script name;
-*   `code` (`string`) — Four-character ISO 15924 code;
-*   `numeric` (`string`) — Three-character ISO 15924 code;
-*   `date` (`string`) — Date of addition;
-*   `pva` (`string?`) — Property Value Alias;
+*   `name` (`string`) — Script name
+*   `code` (`string`) — Four-character ISO 15924 code
+*   `numeric` (`string`) — Three-character ISO 15924 code
+*   `pva` (`string?`) — Property Value Alias
+*   `date` (`string`) — Date of addition
 
 ## Related
 
