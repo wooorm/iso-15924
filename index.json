@@ -3,8 +3,8 @@
     "code": "Adlm",
     "name": "Adlam",
     "numeric": "166",
-    "pva": null,
-    "date": "2014-11-15"
+    "pva": "Adlam",
+    "date": "2016-12-05"
   },
   {
     "code": "Afak",
@@ -92,17 +92,17 @@
   },
   {
     "code": "Beng",
-    "name": "Bengali",
+    "name": "Bengali (Bangla)",
     "numeric": "325",
     "pva": "Bengali",
-    "date": "2004-05-01"
+    "date": "2016-12-05"
   },
   {
     "code": "Bhks",
     "name": "Bhaiksuki",
     "numeric": "334",
-    "pva": null,
-    "date": "2015-07-15"
+    "pva": "Bhaiksuki",
+    "date": "2016-12-05"
   },
   {
     "code": "Blis",
@@ -196,11 +196,18 @@
     "date": "2006-06-21"
   },
   {
+    "code": "Cpmn",
+    "name": "Cypro-Minoan",
+    "numeric": "402",
+    "pva": null,
+    "date": "2017-07-26"
+  },
+  {
     "code": "Cprt",
-    "name": "Cypriot",
+    "name": "Cypriot syllabary",
     "numeric": "403",
     "pva": "Cypriot",
-    "date": "2004-05-01"
+    "date": "2017-07-26"
   },
   {
     "code": "Cyrl",
@@ -222,6 +229,13 @@
     "numeric": "315",
     "pva": "Devanagari",
     "date": "2004-05-01"
+  },
+  {
+    "code": "Dogr",
+    "name": "Dogra",
+    "numeric": "328",
+    "pva": null,
+    "date": "2016-12-05"
   },
   {
     "code": "Dsrt",
@@ -281,10 +295,10 @@
   },
   {
     "code": "Geor",
-    "name": "Georgian (Mkhedruli)",
+    "name": "Georgian (Mkhedruli and Mtavruli)",
     "numeric": "240",
     "pva": "Georgian",
-    "date": "2004-05-29"
+    "date": "2016-12-05"
   },
   {
     "code": "Glag",
@@ -292,6 +306,20 @@
     "numeric": "225",
     "pva": "Glagolitic",
     "date": "2006-06-21"
+  },
+  {
+    "code": "Gong",
+    "name": "Gunjala Gondi",
+    "numeric": "312",
+    "pva": null,
+    "date": "2016-12-05"
+  },
+  {
+    "code": "Gonm",
+    "name": "Masaram Gondi",
+    "numeric": "313",
+    "pva": "Masaram Gondi",
+    "date": "2017-07-26"
   },
   {
     "code": "Goth",
@@ -404,6 +432,13 @@
     "numeric": "450",
     "pva": "Pahawh_Hmong",
     "date": "2014-11-15"
+  },
+  {
+    "code": "Hmnp",
+    "name": "Nyiakeng Puachue Hmong",
+    "numeric": "451",
+    "pva": null,
+    "date": "2017-07-26"
   },
   {
     "code": "Hrkt",
@@ -644,6 +679,13 @@
     "date": "2014-11-15"
   },
   {
+    "code": "Maka",
+    "name": "Makasar",
+    "numeric": "366",
+    "pva": null,
+    "date": "2016-12-05"
+  },
+  {
     "code": "Mand",
     "name": "Mandaic, Mandaean",
     "numeric": "140",
@@ -661,8 +703,8 @@
     "code": "Marc",
     "name": "Marchen",
     "numeric": "332",
-    "pva": null,
-    "date": "2014-11-15"
+    "pva": "Marchen",
+    "date": "2016-12-05"
   },
   {
     "code": "Maya",
@@ -670,6 +712,13 @@
     "numeric": "090",
     "pva": null,
     "date": "2004-05-01"
+  },
+  {
+    "code": "Medf",
+    "name": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",
+    "numeric": "265",
+    "pva": null,
+    "date": "2016-12-05"
   },
   {
     "code": "Mend",
@@ -723,9 +772,9 @@
   {
     "code": "Mroo",
     "name": "Mro, Mru",
-    "numeric": "199",
+    "numeric": "264",
     "pva": "Mro",
-    "date": "2014-11-15"
+    "date": "2016-12-05"
   },
   {
     "code": "Mtei",
@@ -766,15 +815,22 @@
     "code": "Newa",
     "name": "Newa, Newar, Newari, Nepāla lipi",
     "numeric": "333",
+    "pva": "Newa",
+    "date": "2016-12-05"
+  },
+  {
+    "code": "Nkdb",
+    "name": "Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)",
+    "numeric": "085",
     "pva": null,
-    "date": "2015-12-16"
+    "date": "2017-07-26"
   },
   {
     "code": "Nkgb",
-    "name": "Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba)",
+    "name": "Naxi Geba (na²¹ɕi³³ gʌ²¹ba²¹, 'Na-'Khi ²Ggŏ-¹baw, Nakhi Geba)",
     "numeric": "420",
     "pva": null,
-    "date": "2009-02-23"
+    "date": "2017-07-26"
   },
   {
     "code": "Nkoo",
@@ -787,8 +843,8 @@
     "code": "Nshu",
     "name": "Nüshu",
     "numeric": "499",
-    "pva": null,
-    "date": "2010-12-21"
+    "pva": "Nushu",
+    "date": "2017-07-26"
   },
   {
     "code": "Ogam",
@@ -813,17 +869,17 @@
   },
   {
     "code": "Orya",
-    "name": "Oriya",
+    "name": "Oriya (Odia)",
     "numeric": "327",
     "pva": "Oriya",
-    "date": "2004-05-01"
+    "date": "2016-12-05"
   },
   {
     "code": "Osge",
     "name": "Osage",
     "numeric": "219",
-    "pva": null,
-    "date": "2014-11-15"
+    "pva": "Osage",
+    "date": "2016-12-05"
   },
   {
     "code": "Osma",
@@ -931,6 +987,13 @@
     "date": "2009-02-23"
   },
   {
+    "code": "Rohg",
+    "name": "Hanifi Rohingya",
+    "numeric": "167",
+    "pva": null,
+    "date": "2017-11-21"
+  },
+  {
     "code": "Roro",
     "name": "Rongorongo",
     "numeric": "620",
@@ -994,6 +1057,13 @@
     "date": "2012-02-06"
   },
   {
+    "code": "Shui",
+    "name": "Shuishu",
+    "numeric": "530",
+    "pva": null,
+    "date": "2017-07-26"
+  },
+  {
     "code": "Sidd",
     "name": "Siddham, Siddhaṃ, Siddhamātṛkā",
     "numeric": "302",
@@ -1015,11 +1085,32 @@
     "date": "2004-05-01"
   },
   {
+    "code": "Sogd",
+    "name": "Sogdian",
+    "numeric": "141",
+    "pva": null,
+    "date": "2017-11-21"
+  },
+  {
+    "code": "Sogo",
+    "name": "Old Sogdian",
+    "numeric": "142",
+    "pva": null,
+    "date": "2017-11-21"
+  },
+  {
     "code": "Sora",
     "name": "Sora Sompeng",
     "numeric": "398",
     "pva": "Sora_Sompeng",
     "date": "2012-02-06"
+  },
+  {
+    "code": "Soyo",
+    "name": "Soyombo",
+    "numeric": "329",
+    "pva": "Soyombo",
+    "date": "2017-07-26"
   },
   {
     "code": "Sund",
@@ -1102,8 +1193,8 @@
     "code": "Tang",
     "name": "Tangut",
     "numeric": "520",
-    "pva": null,
-    "date": "2010-12-21"
+    "pva": "Tangut",
+    "date": "2016-12-05"
   },
   {
     "code": "Tavt",
@@ -1197,6 +1288,13 @@
     "date": "2014-11-15"
   },
   {
+    "code": "Wcho",
+    "name": "Wancho",
+    "numeric": "283",
+    "pva": null,
+    "date": "2017-07-26"
+  },
+  {
     "code": "Wole",
     "name": "Woleai",
     "numeric": "480",
@@ -1223,6 +1321,13 @@
     "numeric": "460",
     "pva": "Yi",
     "date": "2004-05-01"
+  },
+  {
+    "code": "Zanb",
+    "name": "Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)",
+    "numeric": "339",
+    "pva": "Zanabazar_Square",
+    "date": "2017-07-26"
   },
   {
     "code": "Zinh",
