@@ -13,7 +13,7 @@
     "names",
     "information"
   ],
-  "repository": "https://github.com/wooorm/iso-15924",
+  "repository": "wooorm/iso-15924",
   "bugs": "https://github.com/wooorm/iso-15924/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
