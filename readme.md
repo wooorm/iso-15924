@@ -13,11 +13,11 @@ npm install iso-15924
 ## Usage
 
 ```javascript
-var iso15924 = require('iso-15924');
+var iso15924 = require('iso-15924')
 
-iso15924.length; //=> 182
+iso15924.length // => 182
 
-console.log(iso15924.slice(0, 10));
+console.log(iso15924.slice(0, 10))
 ```
 
 Yields:
