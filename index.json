@@ -234,7 +234,7 @@
     "code": "Dogr",
     "name": "Dogra",
     "numeric": "328",
-    "pva": null,
+    "pva": "Dogra",
     "date": "2016-12-05"
   },
   {
@@ -280,6 +280,13 @@
     "date": "2014-11-15"
   },
   {
+    "code": "Elym",
+    "name": "Elymaic",
+    "numeric": "128",
+    "pva": "Elymaic",
+    "date": "2018-08-26"
+  },
+  {
     "code": "Ethi",
     "name": "Ethiopic (Geʻez)",
     "numeric": "430",
@@ -311,14 +318,14 @@
     "code": "Gong",
     "name": "Gunjala Gondi",
     "numeric": "312",
-    "pva": null,
+    "pva": "Gunjala_Gondi",
     "date": "2016-12-05"
   },
   {
     "code": "Gonm",
     "name": "Masaram Gondi",
     "numeric": "313",
-    "pva": "Masaram Gondi",
+    "pva": "Masaram_Gondi",
     "date": "2017-07-26"
   },
   {
@@ -437,7 +444,7 @@
     "code": "Hmnp",
     "name": "Nyiakeng Puachue Hmong",
     "numeric": "451",
-    "pva": null,
+    "pva": "Nyiakeng_Puachue_Hmong",
     "date": "2017-07-26"
   },
   {
@@ -682,7 +689,7 @@
     "code": "Maka",
     "name": "Makasar",
     "numeric": "366",
-    "pva": null,
+    "pva": "Makasar",
     "date": "2016-12-05"
   },
   {
@@ -717,7 +724,7 @@
     "code": "Medf",
     "name": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",
     "numeric": "265",
-    "pva": null,
+    "pva": "Medefaidrin",
     "date": "2016-12-05"
   },
   {
@@ -796,6 +803,13 @@
     "numeric": "350",
     "pva": "Myanmar",
     "date": "2004-05-01"
+  },
+  {
+    "code": "Nand",
+    "name": "Nandinagari",
+    "numeric": "311",
+    "pva": "Nandinagari",
+    "date": "2018-08-26"
   },
   {
     "code": "Narb",
@@ -990,7 +1004,7 @@
     "code": "Rohg",
     "name": "Hanifi Rohingya",
     "numeric": "167",
-    "pva": null,
+    "pva": "Hanifi_Rohingya",
     "date": "2017-11-21"
   },
   {
@@ -1088,14 +1102,14 @@
     "code": "Sogd",
     "name": "Sogdian",
     "numeric": "141",
-    "pva": null,
+    "pva": "Sogdian",
     "date": "2017-11-21"
   },
   {
     "code": "Sogo",
     "name": "Old Sogdian",
     "numeric": "142",
-    "pva": null,
+    "pva": "Old_Sogdian",
     "date": "2017-11-21"
   },
   {
@@ -1291,7 +1305,7 @@
     "code": "Wcho",
     "name": "Wancho",
     "numeric": "283",
-    "pva": null,
+    "pva": "Wancho",
     "date": "2017-07-26"
   },
   {

@@ -19,7 +19,7 @@ npm install iso-15924
 ```javascript
 var iso15924 = require('iso-15924')
 
-iso15924.length // => 197
+console.log(iso15924.length) // => 199
 
 console.log(iso15924.slice(0, 10))
 ```
