@@ -112,6 +112,6 @@ Yields:
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
-[iso]: http://unicode.org/iso15924/
+[iso]: https://unicode.org/iso15924/

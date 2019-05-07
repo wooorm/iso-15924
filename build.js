@@ -4,7 +4,7 @@ var fs = require('fs')
 var zlib = require('zlib')
 var path = require('path')
 var url = require('url')
-var http = require('http')
+var https = require('https')
 var concat = require('concat-stream')
 var zip = require('unzip').Parse
 var dsv = require('d3-dsv')
@@ -15,7 +15,7 @@ var not = require('not')
 var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
 
 var opts = xtend(
-  url.parse('http://www.unicode.org/iso15924/iso15924.txt.zip'),
+  url.parse('https://www.unicode.org/iso15924/iso15924.txt.zip'),
   {
     headers: {'accept-encoding': 'gzip,deflate'}
   }
@@ -25,7 +25,7 @@ var found = true
 
 process.on('exit', onexit)
 
-http.request(opts, onconnection).end()
+https.request(opts, onconnection).end()
 
 function onexit() {
   if (!found) {
