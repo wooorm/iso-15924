@@ -1,4 +1,8 @@
-# iso-15924 [![Build Status][build-badge]][build-page]
+# iso-15924
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 [ISO 15924][iso] codes in an accessible format, all of them.
 
@@ -106,7 +110,15 @@ Yields:
 
 [build-badge]: https://img.shields.io/travis/wooorm/iso-15924.svg
 
-[build-page]: https://travis-ci.org/wooorm/iso-15924
+[build]: https://travis-ci.org/wooorm/iso-15924
+
+[downloads-badge]: https://img.shields.io/npm/dm/iso-15924.svg
+
+[downloads]: https://www.npmjs.com/package/iso-15924
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/iso-15924.svg
+
+[size]: https://bundlephobia.com/result?p=iso-15924
 
 [npm]: https://docs.npmjs.com/cli/install
 
