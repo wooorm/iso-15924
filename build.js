@@ -3,29 +3,27 @@
 var fs = require('fs')
 var zlib = require('zlib')
 var path = require('path')
-var url = require('url')
+var URL = require('url').URL
 var https = require('https')
 var concat = require('concat-stream')
 var zip = require('unzip').Parse
 var dsv = require('d3-dsv')
 var bail = require('bail')
-var xtend = require('xtend')
 var not = require('not')
 
 var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
-
-var opts = xtend(
-  url.parse('https://www.unicode.org/iso15924/iso15924.txt.zip'),
-  {
-    headers: {'accept-encoding': 'gzip,deflate'}
-  }
-)
 
 var found = true
 
 process.on('exit', onexit)
 
-https.request(opts, onconnection).end()
+https
+  .request(
+    new URL('https://www.unicode.org/iso15924/iso15924.txt.zip'),
+    {headers: {'Accept-Encoding': 'gzip,deflate'}},
+    onconnection
+  )
+  .end()
 
 function onexit() {
   if (!found) {
