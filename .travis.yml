@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/boron
+  - node
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: rDw8ONsycSRx2L28k5RWnr6T5TO1sUg3iqTXq6HnPrdbA6cAhlbWqvqdeBOINjr3HDEOnB7/LikmyZIEiKh4Be+Ptl1qytz+0ZVjWO0IFX+omhO6jsfVbcVybP4KFDiBeotA1OzvhOiIvVbYb2wNBs8w6cNODg2u+G3gTRzUa/MZIdb1F4ZtRGUWcGMqBpiPBIIfagjOcR/9VRQbrCb1CQlziD8iI7iAonQIQgScVlun56gGAN2JvnoPwEYb2EgJV+1jD7p3gwpdtC7/ovKMSxazQnGhAWKYWyzmOTCNlblPh+SPbWgZucspHR39MLnBEu8poV/BryB3mSSONqShra5VNQIJSu6v8TmoioZNCXbHsqznAaVpdbsxG9JwiR+74GQd5MjNEbcQDXlLzKQ3aUD8FfUEMvVVzPqm1LDhY9O0FXH/job4689Ei+ywW2QxEg5GvLEP3EcZYPawyqmmSz2lbU2iS5ngMpVbVLTJJF3inWwNczXD59Gxnt2/J25sFurWaKDqWV8mAqde7pRFAXBRDhhj2HPWwxYwbcgaspyU4L35RE1ZcNVqGtYIqr86jHaRnzkqtsD7cANxjV1eWyTf9nJDErq6yPsA5Aw1Y2LDUwZXYfZ01WMgUSbX55NafGGOq60QLwI9hJSH+OuV5/8d9enIrDfqIm22/OeNbzM=
+    secure: bf+QWMPaNXJaoP5NVDWo0Ag5T43HSm7hK322YSUu32hMXRy7qZjcoly25/syi1MdB/llC6oHb/8zQ4SwCZde4tsY0H7hAAJQtb+lbYnk7cYaUD8Oj3BW8A9lzAk8XegJhLHCb3oXnf7Bgate/BOYDxMjksmdcWjiwhkFoDOulvBv+ooEY4FzCqtLZwKHlRGxIpTCLvn9DGVolyyxpCKhFfD8nVjd1RKqw59i+XnIBwRTR3v2GGuhqPWQwDSUH3/gZgRPxRIgpE38T96rE44y0GmQnIVw9QROHL7BzEH0N5iTUPN8riBh93bx05pDhDFMPZlIPvy/hsX4V/S3R9eaFDSjpiiu4EPRjEbXrgt3/I5dMsYh1z0VdHPiZCdQLV48oqpkOKhZk8Uxsk87R3h/qxTuCN98wzSQVOvcNjIMJ8aZpWuq9iaQuLcgleCnuJT/b+hY36M0V7QzdGAC5Plimnoshy6EDIavZ2Dnny2oiKlU5uX7xNrtRfYEe48/gH5H/r1WP9MNwiJa+KAhNdqRCje2ZTDtC+ddCryAmBKyyo6dX6go9vjQYNDdGDBHH34MIuVb1cWsXdoJ53kaEFiM0ssB0n31HHcX8CcK8cGRfN+1DVGiGNYY/BpDB0D7Xzw2DpjHdUnFuITxkldHOzpxbyyqdKhAOGc+hGY1ILyRVME=
   file:
-    - "iso-15924.js"
-    - "iso-15924.min.js"
+    - 'iso-15924.js'
+    - 'iso-15924.min.js'
   on:
     tags: true
