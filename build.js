@@ -2,20 +2,17 @@
 
 var fs = require('fs')
 var zlib = require('zlib')
-var path = require('path')
 var URL = require('url').URL
 var https = require('https')
 var concat = require('concat-stream')
-var zip = require('unzip').Parse
+var yauzl = require('yauzl')
 var dsv = require('d3-dsv')
 var bail = require('bail')
 var not = require('not')
 
 var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
 
-var found = true
-
-process.on('exit', onexit)
+var found = false
 
 https
   .request(
@@ -25,26 +22,50 @@ https
   )
   .end()
 
-function onexit() {
-  if (!found) {
-    throw new Error('File not found')
-  }
-}
-
 function onconnection(res) {
   res
     .pipe(zlib.createGunzip())
-    .pipe(zip())
-    .on('entry', onentry)
+    .pipe(fs.createWriteStream('archive.zip'))
+    .on('close', onclose)
     .on('error', bail)
 }
 
-function onentry(entry) {
-  if (path.basename(entry.path) === 'iso15924-utf8-20171121.txt') {
+function onclose() {
+  yauzl.open('archive.zip', {lazyEntries: true}, onopen)
+}
+
+function onopen(err, archive) {
+  bail(err)
+
+  read()
+
+  archive.on('entry', onentry)
+  archive.on('end', onend)
+
+  function onentry(entry) {
+    if (entry.fileName !== 'iso15924-utf8-20180827.txt') {
+      return read()
+    }
+
     found = true
-    entry.pipe(concat(onconcat)).on('error', bail)
-  } else {
-    entry.autodrain()
+
+    archive.openReadStream(entry, onreadstream)
+  }
+
+  function onreadstream(err, rs) {
+    bail(err)
+    rs.pipe(concat(onconcat)).on('error', bail)
+    rs.on('end', read)
+  }
+
+  function read() {
+    archive.readEntry()
+  }
+}
+
+function onend() {
+  if (!found) {
+    throw new Error('File not found')
   }
 }
 
