@@ -182,6 +182,13 @@
     "date": "2004-05-01"
   },
   {
+    "code": "Chrs",
+    "name": "Chorasmian",
+    "numeric": "109",
+    "pva": "Chorasmian",
+    "date": "2019-08-19"
+  },
+  {
     "code": "Cirt",
     "name": "Cirth",
     "numeric": "291",
@@ -229,6 +236,13 @@
     "numeric": "315",
     "pva": "Devanagari",
     "date": "2004-05-01"
+  },
+  {
+    "code": "Diak",
+    "name": "Dives Akuru",
+    "numeric": "342",
+    "pva": "Dives_Akuru",
+    "date": "2019-08-19"
   },
   {
     "code": "Dogr",
@@ -549,7 +563,7 @@
     "code": "Kits",
     "name": "Khitan small script",
     "numeric": "288",
-    "pva": null,
+    "pva": "Khitan_Small_Script",
     "date": "2015-07-15"
   },
   {
@@ -1328,6 +1342,13 @@
     "numeric": "020",
     "pva": "Cuneiform",
     "date": "2006-10-10"
+  },
+  {
+    "code": "Yezi",
+    "name": "Yezidi",
+    "numeric": "192",
+    "pva": "Yezidi",
+    "date": "2019-08-19"
   },
   {
     "code": "Yiii",

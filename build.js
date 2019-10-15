@@ -43,7 +43,7 @@ function onopen(err, archive) {
   archive.on('end', onend)
 
   function onentry(entry) {
-    if (entry.fileName !== 'iso15924-utf8-20180827.txt') {
+    if (entry.fileName !== 'iso15924-utf8-20190819.txt') {
       return read()
     }
 
