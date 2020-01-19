@@ -83,7 +83,7 @@ function onconcat(body) {
         code: script.code,
         name: script.english,
         numeric: script.numeric,
-        pva: script.pva || null,
+        pva: script.pva || undefined,
         date: script.date
       }
     })
