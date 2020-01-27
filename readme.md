@@ -59,10 +59,16 @@ Yields:
 
 ## Related
 
-*   [`iso-639-2`](https://github.com/wooorm/iso-639-2)
-    — ISO 639-2 codes
+*   [`bcp-47`](https://github.com/wooorm/bcp-47)
+    — Parse and serialize BCP 47 language tags
+*   [`bcp-47-match`](https://github.com/wooorm/bcp-47-match)
+    — Match BCP 47 language tags with language ranges per RFC 4647
 *   [`iso-639-3`](https://github.com/wooorm/iso-639-3)
     — ISO 639-3 codes
+*   [`iso-639-2`](https://github.com/wooorm/iso-639-2)
+    — ISO 639-2 codes
+*   [`un-m49`](https://github.com/wooorm/un-m49)
+    — UN M49 codes
 
 ## License
 
