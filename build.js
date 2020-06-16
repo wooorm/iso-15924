@@ -1,7 +1,6 @@
 'use strict'
 
 var fs = require('fs')
-var zlib = require('zlib')
 var URL = require('url').URL
 var https = require('https')
 var concat = require('concat-stream')
@@ -12,19 +11,18 @@ var not = require('not')
 
 var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
 
+var other = []
 var found = false
 
 https
   .request(
     new URL('https://www.unicode.org/iso15924/iso15924.txt.zip'),
-    {headers: {'Accept-Encoding': 'gzip,deflate'}},
     onconnection
   )
   .end()
 
 function onconnection(response) {
   response
-    .pipe(zlib.createGunzip())
     .pipe(fs.createWriteStream('archive.zip'))
     .on('close', onclose)
     .on('error', bail)
@@ -43,7 +41,8 @@ function onopen(err, archive) {
   archive.on('end', onend)
 
   function onentry(entry) {
-    if (entry.fileName !== 'iso15924-utf8-20190819.txt') {
+    if (entry.fileName !== 'iso15924-utf8-20200424.txt') {
+      other.push(entry.fileName)
       return read()
     }
 
@@ -65,7 +64,7 @@ function onopen(err, archive) {
 
 function onend() {
   if (!found) {
-    throw new Error('File not found')
+    throw new Error('File not found, but these were: `' + other + '`')
   }
 }
 
