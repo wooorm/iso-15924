@@ -22,8 +22,8 @@ https
   )
   .end()
 
-function onconnection(res) {
-  res
+function onconnection(response) {
+  response
     .pipe(zlib.createGunzip())
     .pipe(fs.createWriteStream('archive.zip'))
     .on('close', onclose)
@@ -70,15 +70,12 @@ function onend() {
 }
 
 function onconcat(body) {
-  var data = String(body)
-    .split('\n')
-    .filter(not(comment))
-    .join('\n')
+  var data = String(body).split('\n').filter(not(comment)).join('\n')
 
   data = dsv
     .dsvFormat(';')
     .parse(headers.join(';') + data)
-    .map(function(script) {
+    .map(function (script) {
       return {
         code: script.code,
         name: script.english,

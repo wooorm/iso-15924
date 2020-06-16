@@ -1,2 +1,4 @@
 iso-15924.js
 iso-15924.min.js
+*.json
+*.md
