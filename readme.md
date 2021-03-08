@@ -1,6 +1,7 @@
 # iso-15924
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -80,9 +81,13 @@ Yields:
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/iso-15924.svg
+[build-badge]: https://github.com/wooorm/iso-15924/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/iso-15924
+[build]: https://github.com/wooorm/iso-15924/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/iso-15924.svg
+
+[coverage]: https://codecov.io/github/wooorm/iso-15924
 
 [downloads-badge]: https://img.shields.io/npm/dm/iso-15924.svg
 
