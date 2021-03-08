@@ -1,3 +1,13 @@
+/**
+ * @typedef Script
+ * @property {string} name Name of script
+ * @property {string} code Four character ISO 15924 code
+ * @property {string} numeric Three character ISO 15924 code
+ * @property {string} [pva] Property value alias
+ * @property {string} date Date of addition (e.g., `2016-12-05`)
+ *
+ * @type {Script[]} List of scripts.
+ */
 export var iso15924 = [
   {
     code: 'Adlm',
