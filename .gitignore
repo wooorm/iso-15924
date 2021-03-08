@@ -1,7 +1,6 @@
 .DS_Store
 *.log
+coverage/
 node_modules/
-iso-15924.js
-iso-15924.min.js
 yarn.lock
 archive.zip

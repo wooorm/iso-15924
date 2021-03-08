@@ -1,16 +1,12 @@
-'use strict'
-
-var fs = require('fs')
-var URL = require('url').URL
-var https = require('https')
-var concat = require('concat-stream')
-var yauzl = require('yauzl')
-var dsv = require('d3-dsv')
-var bail = require('bail')
-var not = require('not')
+import fs from 'fs'
+import https from 'https'
+import concat from 'concat-stream'
+import yauzl from 'yauzl'
+import dsv from 'd3-dsv'
+import bail from 'bail'
+import not from 'not'
 
 var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
-
 var other = []
 var found = false
 
@@ -83,7 +79,11 @@ function onconcat(body) {
       }
     })
 
-  fs.writeFile('index.json', JSON.stringify(data, null, 2) + '\n', bail)
+  fs.writeFile(
+    'index.js',
+    'export var iso15924 = ' + JSON.stringify(data, null, 2) + '\n',
+    bail
+  )
 }
 
 function comment(line) {

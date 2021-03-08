@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var iso15924 = require('.')
+import test from 'tape'
+import {iso15924} from './index.js'
 
 test('iso15924', function (t) {
   var index = -1
