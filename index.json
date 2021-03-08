@@ -891,6 +891,12 @@
     "date": "2004-05-01"
   },
   {
+    "code": "Ougr",
+    "name": "Old Uyghur",
+    "numeric": "143",
+    "date": "2021-01-25"
+  },
+  {
     "code": "Palm",
     "name": "Palmyrene",
     "numeric": "126",
@@ -903,6 +909,18 @@
     "numeric": "263",
     "pva": "Pau_Cin_Hau",
     "date": "2014-11-15"
+  },
+  {
+    "code": "Pcun",
+    "name": "Proto-Cuneiform",
+    "numeric": "015",
+    "date": "2021-01-25"
+  },
+  {
+    "code": "Pelm",
+    "name": "Proto-Elamite",
+    "numeric": "016",
+    "date": "2021-01-25"
   },
   {
     "code": "Perm",
@@ -966,6 +984,12 @@
     "date": "2009-06-01"
   },
   {
+    "code": "Psin",
+    "name": "Proto-Sinaitic",
+    "numeric": "103",
+    "date": "2021-01-25"
+  },
+  {
     "code": "Qaaa",
     "name": "Reserved for private use (start)",
     "numeric": "900",
@@ -976,6 +1000,12 @@
     "name": "Reserved for private use (end)",
     "numeric": "949",
     "date": "2004-05-29"
+  },
+  {
+    "code": "Ranj",
+    "name": "Ranjana",
+    "numeric": "303",
+    "date": "2021-01-25"
   },
   {
     "code": "Rjng",
@@ -1251,6 +1281,12 @@
     "date": "2014-11-15"
   },
   {
+    "code": "Tnsa",
+    "name": "Tangsa",
+    "numeric": "275",
+    "date": "2021-02-17"
+  },
+  {
     "code": "Toto",
     "name": "Toto",
     "numeric": "294",
@@ -1275,6 +1311,12 @@
     "name": "Visible Speech",
     "numeric": "280",
     "date": "2004-05-01"
+  },
+  {
+    "code": "Vith",
+    "name": "Vithkuqi",
+    "numeric": "228",
+    "date": "2021-02-17"
   },
   {
     "code": "Wara",

@@ -41,13 +41,12 @@ function onopen(error, archive) {
   archive.on('end', onend)
 
   function onentry(entry) {
-    if (entry.fileName !== 'iso15924-utf8-20200424.txt') {
+    if (entry.fileName !== 'iso15924-utf8-20210217.txt') {
       other.push(entry.fileName)
       return read()
     }
 
     found = true
-
     archive.openReadStream(entry, onreadstream)
   }
 
