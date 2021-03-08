@@ -23,7 +23,6 @@
   "files": [
     "index.json"
   ],
-  "dependencies": {},
   "devDependencies": {
     "bail": "^1.0.0",
     "browserify": "^17.0.0",
@@ -35,7 +34,7 @@
     "remark-preset-wooorm": "^8.0.0",
     "tape": "^5.0.0",
     "tinyify": "^3.0.0",
-    "xo": "^0.34.0",
+    "xo": "^0.38.0",
     "yauzl": "^2.0.0"
   },
   "scripts": {
