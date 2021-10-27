@@ -8,7 +8,7 @@
  *
  * @type {Script[]} List of scripts.
  */
-export var iso15924 = [
+export const iso15924 = [
   {
     code: 'Adlm',
     name: 'Adlam',

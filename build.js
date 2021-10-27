@@ -64,11 +64,12 @@ function onend() {
 }
 
 function onconcat(body) {
-  let data = String(body).split('\n').filter(not(comment)).join('\n')
-
-  data = dsv
+  const data = dsv
     .dsvFormat(';')
-    .parse(headers.join(';') + data)
+    .parse(
+      headers.join(';') +
+        String(body).split('\n').filter(not(comment)).join('\n')
+    )
     .map(function (script) {
       return {
         code: script.code,
@@ -92,7 +93,7 @@ function onconcat(body) {
       ' *',
       ' * @type {Script[]} List of scripts.',
       ' */',
-      'export var iso15924 = ' + JSON.stringify(data, null, 2),
+      'export const iso15924 = ' + JSON.stringify(data, null, 2),
       ''
     ].join('\n'),
     bail
