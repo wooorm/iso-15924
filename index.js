@@ -1378,8 +1378,7 @@ export var iso15924 = [
   },
   {
     code: 'Zanb',
-    name:
-      'Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)',
+    name: 'Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)',
     numeric: '339',
     pva: 'Zanabazar_Square',
     date: '2017-07-26'

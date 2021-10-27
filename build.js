@@ -1,14 +1,14 @@
-import fs from 'fs'
-import https from 'https'
+import fs from 'node:fs'
+import https from 'node:https'
 import concat from 'concat-stream'
 import yauzl from 'yauzl'
-import dsv from 'd3-dsv'
-import bail from 'bail'
+import * as dsv from 'd3-dsv'
+import {bail} from 'bail'
 import not from 'not'
 
-var headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
-var other = []
-var found = false
+const headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
+const other = []
+let found = false
 
 https
   .request(
@@ -64,7 +64,7 @@ function onend() {
 }
 
 function onconcat(body) {
-  var data = String(body).split('\n').filter(not(comment)).join('\n')
+  let data = String(body).split('\n').filter(not(comment)).join('\n')
 
   data = dsv
     .dsvFormat(';')

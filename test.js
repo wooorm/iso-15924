@@ -2,8 +2,8 @@ import test from 'tape'
 import {iso15924} from './index.js'
 
 test('iso15924', function (t) {
-  var index = -1
-  var script
+  let index = -1
+  let script
 
   t.plan(6)
 
