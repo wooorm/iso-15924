@@ -212,6 +212,7 @@ export const iso15924 = [
     code: 'Cpmn',
     name: 'Cypro-Minoan',
     numeric: '402',
+    pva: 'Cypro_Minoan',
     date: '2017-07-26'
   },
   {
@@ -527,6 +528,12 @@ export const iso15924 = [
     date: '2004-05-01'
   },
   {
+    code: 'Kawi',
+    name: 'Kawi',
+    numeric: '368',
+    date: '2021-12-03'
+  },
+  {
     code: 'Khar',
     name: 'Kharoshthi',
     numeric: '305',
@@ -805,6 +812,12 @@ export const iso15924 = [
     date: '2004-05-01'
   },
   {
+    code: 'Nagm',
+    name: 'Nag Mundari',
+    numeric: '295',
+    date: '2021-12-03'
+  },
+  {
     code: 'Nand',
     name: 'Nandinagari',
     numeric: '311',
@@ -904,6 +917,7 @@ export const iso15924 = [
     code: 'Ougr',
     name: 'Old Uyghur',
     numeric: '143',
+    pva: 'Old_Uyghur',
     date: '2021-01-25'
   },
   {
@@ -1155,6 +1169,12 @@ export const iso15924 = [
     date: '2007-07-02'
   },
   {
+    code: 'Sunu',
+    name: 'Sunuwar',
+    numeric: '274',
+    date: '2021-12-03'
+  },
+  {
     code: 'Sylo',
     name: 'Syloti Nagri',
     numeric: '316',
@@ -1294,12 +1314,14 @@ export const iso15924 = [
     code: 'Tnsa',
     name: 'Tangsa',
     numeric: '275',
+    pva: 'Tangsa',
     date: '2021-02-17'
   },
   {
     code: 'Toto',
     name: 'Toto',
     numeric: '294',
+    pva: 'Toto',
     date: '2020-04-16'
   },
   {
@@ -1326,6 +1348,7 @@ export const iso15924 = [
     code: 'Vith',
     name: 'Vithkuqi',
     numeric: '228',
+    pva: 'Vithkuqi',
     date: '2021-02-17'
   },
   {
