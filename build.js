@@ -51,7 +51,7 @@ function onconcat(body) {
       ' * @property {string} date Date of addition (e.g., `2016-12-05`)',
       ' */',
       '',
-      '/** @type {Script[]} */',
+      '/** @type {Array<Script>} */',
       'export const iso15924 = ' + JSON.stringify(data, null, 2),
       ''
     ].join('\n'),

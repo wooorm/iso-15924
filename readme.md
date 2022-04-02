@@ -83,7 +83,7 @@ There is no default export.
 
 ### `iso15924`
 
-`Script[]` — List of scripts.
+`Array<Script>` — List of scripts.
 
 ###### `Script`
 
