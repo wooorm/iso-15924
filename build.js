@@ -1,60 +1,20 @@
-import assert from 'node:assert'
 import https from 'node:https'
 import fs from 'node:fs'
 import {URL} from 'node:url'
 import concat from 'concat-stream'
-import yauzl from 'yauzl'
 import * as dsv from 'd3-dsv'
 import {bail} from 'bail'
 
 const headers = ['code', 'numeric', 'english', 'french', 'pva', 'age', 'date']
-/** @type {string[]} */
-const other = []
-let found = false
 
 https
   .request(
-    new URL('https://www.unicode.org/iso15924/iso15924.txt.zip'),
+    new URL('https://www.unicode.org/iso15924/iso15924.txt'),
     (response) => {
-      response
-        .pipe(fs.createWriteStream('archive.zip'))
-        .on('close', onclose)
-        .on('error', bail)
+      response.pipe(concat(onconcat))
     }
   )
   .end()
-
-function onclose() {
-  yauzl.open('archive.zip', {lazyEntries: true}, (error, archive) => {
-    bail(error)
-
-    read()
-
-    assert(archive, 'expected archive')
-
-    archive.on('entry', (/** @type {import('yauzl').Entry} */ entry) => {
-      if (entry.fileName !== 'iso15924-utf8-20210217.txt') {
-        other.push(entry.fileName)
-        return read()
-      }
-
-      found = true
-      archive.openReadStream(entry, (error, rs) => {
-        bail(error)
-        assert(rs, 'expected read stream')
-        rs.pipe(concat(onconcat)).on('error', bail)
-        rs.on('end', read)
-      })
-    })
-
-    archive.on('end', onend)
-
-    function read() {
-      assert(archive, 'expected archive')
-      archive.readEntry()
-    }
-  })
-}
 
 /**
  * @param {Buffer} body
@@ -97,10 +57,4 @@ function onconcat(body) {
     ].join('\n'),
     bail
   )
-}
-
-function onend() {
-  if (!found) {
-    throw new Error('File not found, but these were: `' + other + '`')
-  }
 }
