@@ -28,7 +28,7 @@ This is the data of [ISO 15924][iso].
 
 ## When should I use this?
 
-ISO 15924 represents scripts (such as Latin).
+ISO 15924 represents scripts (such as Latin, Georgian).
 These scripts are often seen in BCP 47 language codes: `sr-Cyrl` (`sr` is ISO
 639-1 for Serbian, `Cyrl` is ISO 15924 for Cyrillic).
 This package is useful when you’re working with languages.
@@ -36,7 +36,7 @@ This package is useful when you’re working with languages.
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install iso-15924
@@ -78,32 +78,32 @@ Yields:
 
 ## API
 
-This package exports the following identifier: `iso15924`.
+This package exports the identifier `iso15924`.
 There is no default export.
 
 ### `iso15924`
 
-`Array<Script>` — List of scripts.
+List of scripts (`Array<Script>`).
 
 ###### `Script`
 
-`Object` with the following properties:
+ISO 15924 script info (`Object`):
 
 *   `name` (`string`) — script name
-*   `code` (`string`) — four-character ISO 15924 code
-*   `numeric` (`string`) — three-character ISO 15924 code
+*   `code` (`string`) — four character ISO 15924 code
+*   `numeric` (`string`) — three character ISO 15924 code
 *   `pva` (`string?`) — property value alias
-*   `date` (`string`) — date of addition
+*   `date` (`string`) — date of addition (e.g., `'2016-12-05'`)
 
 ## Types
 
 This package is fully typed with [TypeScript][].
-The `Script` type is exported.
+It exports the additional type `Script`.
 
 ## Compatibility
 
 This package is at least compatible with all maintained versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 It also works in Deno and modern browsers.
 
 ## Security
