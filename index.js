@@ -199,6 +199,12 @@ export const iso15924 = [
     date: '2004-05-01'
   },
   {
+    code: 'Chis',
+    name: 'Chisoi',
+    numeric: '298',
+    date: '2023-09-12'
+  },
+  {
     code: 'Chrs',
     name: 'Chorasmian',
     numeric: '109',
@@ -321,6 +327,12 @@ export const iso15924 = [
     date: '2004-10-25'
   },
   {
+    code: 'Gara',
+    name: 'Garay',
+    numeric: '164',
+    date: '2023-09-12'
+  },
+  {
     code: 'Geok',
     name: 'Khutsuri (Asomtavruli and Nuskhuri)',
     numeric: '241',
@@ -382,6 +394,12 @@ export const iso15924 = [
     numeric: '320',
     pva: 'Gujarati',
     date: '2004-05-01'
+  },
+  {
+    code: 'Gukh',
+    name: 'Gurung Khema',
+    numeric: '397',
+    date: '2023-09-12'
   },
   {
     code: 'Guru',
@@ -541,6 +559,7 @@ export const iso15924 = [
     code: 'Kawi',
     name: 'Kawi',
     numeric: '368',
+    pva: 'Kawi',
     date: '2021-12-03'
   },
   {
@@ -595,6 +614,12 @@ export const iso15924 = [
     name: 'Kpelle',
     numeric: '436',
     date: '2010-03-26'
+  },
+  {
+    code: 'Krai',
+    name: 'Kirat Rai',
+    numeric: '396',
+    date: '2023-09-12'
   },
   {
     code: 'Kthi',
@@ -825,6 +850,7 @@ export const iso15924 = [
     code: 'Nagm',
     name: 'Nag Mundari',
     numeric: '295',
+    pva: 'Nag_Mundari',
     date: '2021-12-03'
   },
   {
@@ -894,6 +920,12 @@ export const iso15924 = [
     numeric: '261',
     pva: 'Ol_Chiki',
     date: '2007-07-02'
+  },
+  {
+    code: 'Onao',
+    name: 'Ol Onal',
+    numeric: '296',
+    date: '2023-09-12'
   },
   {
     code: 'Orkh',
@@ -1130,6 +1162,12 @@ export const iso15924 = [
     date: '2014-11-15'
   },
   {
+    code: 'Sidt',
+    name: 'Sidetic',
+    numeric: '180',
+    date: '2023-09-12'
+  },
+  {
     code: 'Sind',
     name: 'Khudawadi, Sindhi',
     numeric: '318',
@@ -1266,6 +1304,12 @@ export const iso15924 = [
     date: '2009-06-01'
   },
   {
+    code: 'Tayo',
+    name: 'Tai Yo',
+    numeric: '380',
+    date: '2023-09-12'
+  },
+  {
     code: 'Telu',
     name: 'Telugu',
     numeric: '340',
@@ -1328,11 +1372,29 @@ export const iso15924 = [
     date: '2021-02-17'
   },
   {
+    code: 'Todr',
+    name: 'Todhri',
+    numeric: '229',
+    date: '2023-09-12'
+  },
+  {
+    code: 'Tols',
+    name: 'Tolong Siki',
+    numeric: '299',
+    date: '2023-09-12'
+  },
+  {
     code: 'Toto',
     name: 'Toto',
     numeric: '294',
     pva: 'Toto',
     date: '2020-04-16'
+  },
+  {
+    code: 'Tutg',
+    name: 'Tulu-Tigalari',
+    numeric: '341',
+    date: '2023-09-12'
   },
   {
     code: 'Ugar',
